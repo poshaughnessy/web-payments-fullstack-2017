@@ -4,7 +4,7 @@ My slides for [FullStack 2017](https://skillsmatter.com/conferences/8264-fullsta
 
 ## To view the slides
 
-Check them out at: [LINK COMING SOON](todo)
+Check them out at: https://poshaughnessy.github.io/web-payments-fullstack-2017/
 
 Use arrow keys or the arrow buttons to move left/right.
 
