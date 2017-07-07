@@ -1,0 +1,15 @@
+{
+  "name": "Beyond The Browser (Codebar)",
+  "description": "Beyond the Browser slides presented at Codebar, Feb 2017",
+  "short_name": "BTB Codebar",
+  "icons": [ {
+    "src": "images/appicon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#987FFF",
+  "background_color": "#151213"
+}

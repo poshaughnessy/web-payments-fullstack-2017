@@ -1,0 +1,1235 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#987fff">
+  <title>Web Payments</title>
+  <style type="text/css">
+    /*
+ * Originally based on github.com/sjaakvandenberg/cleaver-dark
+ */
+
+/* Theme Styles */
+body {
+  font-family: 'Rubik', 'Helvetica', sans-serif;
+  font-size: 80%;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Presentation Styles */
+.slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 120%;
+  line-height: 1.375;
+  overflow: hidden;
+}
+
+.valign-top {
+  align-items: flex-start;
+}
+
+.valign-bottom {
+  align-items: flex-end;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.contact p {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.contact .social {
+  font-size: 1em;
+}
+
+.contact h3 {
+  margin-bottom: 0.5em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  max-height: calc(100vh - 3em); /* Allow space for captions by default */
+}
+
+video {
+  max-height: 85vh;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.arrow {
+  float: left;
+  height: 0;
+  width: 0;
+  margin-right: 15px;
+  border: 15px solid #ccc;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.prev {
+  border-top-color: transparent;
+  border-right-width: 25px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-left-width: 0;
+}
+
+.prev:hover {
+  border-top-color: transparent;
+  border-right-width: 25px;
+  border-bottom-color: transparent;
+  border-left-width: 0;
+  border-left-color: #ccc;
+}
+
+.next {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-right-width: 0;
+  border-bottom-color: transparent;
+  border-left-width: 25px;
+}
+
+.next:hover {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-right-width: 0;
+  border-left-width: 25px;
+  border-left-color: #ccc;
+}
+
+h1, h2 {
+  margin: 0 0 0.25em 0;
+  font-weight: bold;
+  transform: scaleX(1.05);
+  -webkit-text-shadow: 1px 1px 0 #666;
+  text-shadow: 1px 1px 0 #666;
+}
+
+h1 {
+  font-size: 300%;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 175%;
+  line-height: 1.4;
+}
+
+h2:last-child {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin: 0.5em 0 1em 0;
+  font-size: 150%;
+  line-height: 1.4;
+  border-bottom: none;
+  font-weight: normal;
+}
+
+h4 {
+  margin: 0.5em 0 1em 0;
+  font-size: 120%;
+  line-height: 1.3;
+  border-bottom: none;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  margin: 0.5 0 1em 0;
+  padding: 0 0 0 45px;
+  line-height: 1.4;
+  font-size: 1.15em;
+  display: inline-block;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+li code {
+  font-size: 0.9em;
+}
+
+.long-list li {
+  font-size: 1em;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.75em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+.left {
+  float: left;
+  width: 48%;
+}
+
+.right {
+  float: right;
+  width: 48%;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 0 #666;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-shadow: 1px 1px 0 #666;
+}
+
+pre {
+  font-size: 75%;
+  line-height: 1.3;
+  text-align: left;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  background: #fafafa;
+}
+
+table td,
+table th {
+  padding: 0 2em;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+}
+
+.progress-bar {
+  height: 3px;
+  width: 0;
+  background-color: #987fff;
+  -webkit-transition: width .15s ease-out;
+  -moz-transition: width .15s ease-out;
+  -o-transition: width .15s ease-out;
+  transition: width .15s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.caption {
+  font-size: 0.7em;
+  margin-top: 0.5em;
+  font-weight: normal;
+  text-shadow: none;
+  -webkit-text-stroke-width: 0;
+  color: #aaa;
+  clear: both;
+}
+
+.credits {
+  margin-top: 5em;
+  font-size: 0.5em;
+  font-weight: normal;
+  text-shadow: none;
+  -webkit-text-stroke-width: 0;
+}
+
+/* Quote by... */
+blockquote + p {
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+/* Code Highlighting */
+code {
+  font-family: Courier, sans-serif;
+  border-radius: 3px;
+  font-weight: 500;
+  text-shadow: none;
+  -webkit-text-stroke-width: 0;
+}
+
+pre {
+  display: inline-block;
+  border-radius: 1em;
+}
+
+pre code {
+  display: block;
+  color: #444;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  overflow-y: hidden;
+  background: transparent;
+}
+
+pre .tag,
+pre .tag .title,
+pre .keyword,
+pre .literal,
+pre .change,
+pre .winutils,
+pre .flow,
+pre .lisp .title,
+pre .clojure .built_in,
+pre .nginx .title,
+pre .tex .special {
+  color: #704dff;
+}
+
+pre code .constant {
+  color: #66d9ef;
+}
+
+pre .class .title {
+  color: #fafafa;
+}
+
+pre .attribute,
+pre .symbol,
+pre .symbol .string,
+pre .value,
+pre .regexp {
+  color: #bf79db;
+}
+
+pre .tag .value,
+pre .string,
+pre .subst,
+pre .title,
+pre .haskell .type,
+pre .preprocessor,
+pre .ruby .class .parent,
+pre .built_in,
+pre .sql .aggregate,
+pre .django .template_tag,
+pre .django .variable,
+pre .smalltalk .class,
+pre .javadoc,
+pre .django .filter .argument,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .attr_selector,
+pre .pseudo,
+pre .addition,
+pre .stream,
+pre .envvar,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .prompt {
+  color: #987fff;
+}
+
+pre .comment,
+pre .java .annotation,
+pre .python .decorator,
+pre .template_comment,
+pre .pi,
+pre .doctype,
+pre .deletion,
+pre .shebang,
+pre .apache .sqbracket,
+pre .tex .formula {
+  color: #aaa;
+}
+
+pre .keyword,
+pre .literal,
+pre .css .id,
+pre .phpdoc,
+pre .title,
+pre .haskell .type,
+pre .vbscript .built_in,
+pre .sql .aggregate,
+pre .rsl .built_in,
+pre .smalltalk .class,
+pre .diff .header,
+pre .chunk,
+pre .winutils,
+pre .bash .variable,
+pre .apache .tag,
+pre .tex .special,
+pre .request,
+pre .status {
+  /* font-weight: 600; */
+}
+
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: .5;
+}
+
+.hljs-keyword {
+  color: #704dff;
+}
+
+.hljs-string {
+  color: #987fff;
+}
+
+.hljs-title {
+  color: #673280;
+}
+
+.hljs-comment {
+  color: #777;
+}
+
+/* Media Queries */
+/* 640 x 480 is the default (80%) */
+
+/* 800 x 600 */
+@media (min-width: 800px) and (min-height: 600px) {
+    body {
+        font-size: 125%;
+    }
+}
+
+/* 1024 x 768 */
+@media (min-width: 1024px) and (min-height: 768px) {
+    body {
+        font-size: 160%;
+    }
+}
+
+/* 1152 x 864 */
+@media (min-width: 1152px) and (min-height: 864px) {
+    body {
+        font-size: 180%;
+    }
+}
+
+/* 1280 x 960 */
+@media (min-width: 1280px) and (min-height: 960px) {
+    body {
+        font-size: 200%;
+    }
+}
+
+/* 1440 x 1080 */
+@media (min-width: 1440px) and (min-height: 1080px) {
+    body {
+        font-size: 225%;
+    }
+}
+
+/* 1600 x 1200 */
+@media (min-width: 1600px) and (min-height: 1200px) {
+    body {
+        font-size: 250%;
+    }
+}
+
+/* 1920 x 1440 */
+@media (min-width: 1920px) and (min-height: 1440px) {
+    body {
+        font-size: 300%;
+    }
+}
+
+/* Override theme */
+@media (max-width: 850px) {
+  img {
+    width: auto;
+  }
+}
+
+/* Print styles used for saving to PDF */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    display: flex;
+    page-break-after: always;
+    background-color: #fff;
+  }
+}
+
+/* Common slide contents */
+.contact {
+  margin-top: 3em;
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.5em;
+  color: #666;
+}
+
+.credit a {
+  color: #7a7a7a;
+}
+
+.corner-logos {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+}
+
+.corner-logos img {
+  max-width: 3em;
+}
+
+.iframe .slide-content {
+  height: 100%;
+  padding: 0;
+}
+
+.img-with-caption p {
+  margin: 0;
+}
+
+.img-with-caption img {
+  max-height: calc(100vh - 4em);
+}
+
+.img-with-header img {
+  max-height: calc(100vh - 8em);
+}
+
+.slide .pun {
+  color: #c4c3f5;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.strikethrough {
+  position: relative;
+  padding: 0 5px;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 55%;
+  right: 0;
+  border-top: 5px solid rgba(230, 50, 25, 0.8);
+
+  -webkit-transform:rotate(-8deg);
+  -moz-transform:rotate(-8deg);
+  -ms-transform:rotate(-8deg);
+  -o-transform:rotate(-8deg);
+  transform:rotate(-8deg);
+}
+
+h2 + .quote {
+  margin-top: 2em;
+}
+
+.align-top .slide-content {
+  padding: 0;
+  height: 100%;
+}
+
+.align-top .slide-content img {
+  position: relative;
+  top: 0;
+}
+
+/* For background images so we can apply filters */
+.slide {
+  overflow: auto;
+  position: relative;
+}
+/* Background image */
+.slide:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  background-color: #222;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 5em 1em #000; /* Vignette */
+  width: 100%;
+  height: 100%;
+  /* To fix blurred edges. See: http://stackoverflow.com/questions/12224320/defined-edges-with-css3-filter-blur */
+  transform: scale(1.03);
+}
+/* Background image to render things on top of */
+.slide.bg-fade:before {
+  -webkit-filter: blur(3px) grayscale(0.1) brightness(0.2);
+  filter: blur(3px) grayscale(0.1) brightness(0.2);
+}
+.slide.bg-fade-more:before {
+  -webkit-filter: blur(4px) grayscale(0.1) brightness(0.1);
+  filter: blur(4px) grayscale(0.1) brightness(0.1);
+}
+.slide-content {
+  z-index: 1;
+}
+
+/* Slide specific styles here */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.bg-white h3 {
+  color: #333;
+}
+
+.bg-white .pun {
+  color: #706cf5;
+}
+
+#slide-1 h2 {
+  font-size: 1.5em;
+}
+
+#slide-1 h2.emoji {
+  font-size: 3em;
+}
+
+#slide-1 h3 {
+  font-size: 1.2em;
+}
+
+#payment-gateways {
+  margin-bottom: 0.2em;
+}
+
+.payment-gateways .pun {
+  font-size: 0.9em;
+}
+
+.three-images .slide-content p img {
+  max-width: 32%;
+}
+
+.four-images .slide-content p img {
+  max-width: 24%;
+}
+
+.five-images .slide-content p img {
+  max-width: 19%;
+}
+
+.logos h2 {
+  margin-bottom: 1em;
+}
+
+.logos img {
+  max-width: 30%;
+  max-height: 5em;
+  padding: 0 1em;
+  margin-bottom: 0.5em;
+}
+
+.logos .pun {
+  font-size: 0.9em;
+}
+
+.slide.card-closeup:before {
+  background-image: url(images/card-closeup-purple.jpg);
+  -webkit-filter: blur(6px) brightness(0.3);
+  filter: blur(6px) brightness(0.3);
+}
+
+.slide.what-if:before {
+  background-image: url(images/help.jpg);
+}
+
+.slide.socks-pile:before {
+  background-image: url(images/socks-pile.jpg);
+}
+
+.slide.socks-drawer:before {
+  background-image: url(images/socks-drawer.jpg);
+}
+
+.slide.socks-stack:before {
+  background-image: url(images/socks-stack.jpg);
+}
+
+.emoji {
+  font-weight: normal;
+}
+
+.what-if h2 {
+ font-size: 2em;
+}
+
+.what-if li {
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+
+.what-if ul strong {
+  padding-right: 0.5em;
+  color: #c4c3f5;
+}
+
+.slide.bg-white:before {
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.purple {
+  color: #706cf5
+}
+
+.light-purple {
+  color: #c4c3f5
+}
+
+.browser-support table {
+  margin: 2em 0;
+}
+
+.further-resources li {
+  font-size: 0.9em;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+  <link rel="icon" href="images/favicon.png" type=”image/png">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="slide  bg-fade card-closeup" id="slide-1">
+    <section class="slide-content"><h1 id="web-payments">Web Payments</h1>
+<h2 id="and-the-future-of-online-checkouts">and the future of online checkouts</h2>
+<h2 class="emoji">💳</h2>
+
+<div class="contact">
+  <p>Peter O&#39;Shaughnessy</p>
+  <p class="social"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
+  <p class="social"><a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
+</div></section>
+  </div>
+  <div class="slide hidden  img-with-caption five-images" id="slide-2">
+    <section class="slide-content"><p><img src="images/very-long-checkout-form-1.png" alt="Very long form 1"> <img src="images/very-long-checkout-form-2.png" alt="Very long form 2"> <img src="images/very-long-checkout-form-3.png" alt="Very long form 3"> <img src="images/very-long-checkout-form-4.png" alt="Very long form 4"> <img src="images/very-long-checkout-form-5.png" alt="Very long form 5"></p>
+<h4 id="-ldquo-i-just-want-to-buy-some-socks-rdquo-">&ldquo;I just want to buy some socks&rdquo; 😱</h4>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-3">
+    <section class="slide-content"><h2 id="66-fewer-conversions-on-mobile-than-desktop">66% fewer conversions on mobile than desktop</h2>
+<div class="caption">Source: <a href="https://twitter.com/chromiumdev/status/796809709281939456">Google Chrome</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-4">
+    <section class="slide-content"><p><img src="images/cart-abandonment-reasons-trans.png" alt="Cart abandoment reasons"></p>
+<div class="caption"><a href="https://baymard.com/lists/cart-abandonment-rate">baymard.com/lists/cart-abandonment-rate</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-caption bg-fade-more what-if" id="slide-5">
+    <section class="slide-content"><h2 id="what-if-your-browser-could-help-">What if your browser could help?</h2>
+<ul>
+<li><strong><em>For users:</em></strong> simple &amp; secure experience</li>
+<li><strong><em>For web devs:</em></strong> ready-to-use UI!</li>
+</ul>
+<div class="credit">By <a href="https://www.flickr.com/photos/49889874@N05/5645164344">Marc Falardeau</a></div></section>
+  </div>
+  <div class="slide hidden  bg-white" id="slide-6">
+    <section class="slide-content"><p><a href="https://www.w3.org/TR/payment-request/"><img src="images/payment-request-api-spec.png" alt="Payment Request API spec"></a></p>
+</section>
+  </div>
+  <div class="slide hidden  bg-fade socks-stack" id="slide-7">
+    <section class="slide-content"><h2 id="1-our-first-sock-sale">1. Our first sock sale</h2>
+<h3 class="pun">&ldquo;Getting our <strong>foot</strong> in the door&rdquo;</h3>
+
+<div class="credit">By <a href="https://www.flickr.com/photos/gusgreeper/8329453791">Gus Greeper</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><p><img src="images/payment-request-socks-simple.png" alt="Sock sale"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.PaymentRequest) {
+  <span class="hljs-comment">// We're good to go...</span>
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-comment">// Alas! Use your legacy checkout form...</span>
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> methodData = <span class="hljs-keyword">var</span> methodData = [{
+  <span class="hljs-comment">// NB. To support older format, include networks here </span>
+  supportedMethods: [<span class="hljs-string">'basic-card'</span>],
+  data: {
+    <span class="hljs-comment">// Examples. Others are available too!</span>
+    supportedNetworks: [<span class="hljs-string">'visa'</span>, <span class="hljs-string">'mastercard'</span>, <span class="hljs-string">'amex'</span>]
+  }
+}];
+
+<span class="hljs-keyword">var</span> details = {
+  total: {
+    label: <span class="hljs-string">'Socks'</span>, 
+    amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'12.00'</span>}
+  }
+};</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Show the payment UI and handle the result</span>
+
+<span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
+  .show()
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uiResult</span>) </span>{
+    myPaymentProcessor(uiResult);
+  })
+  .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+    myErrorHandler(error);
+  });</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><video src="videos/socks-megastore-simple.mp4" controls></video>
+
+<div class="caption"><a href="http://samsunginter.net/examples/socks-megastore/after-simple/">samsunginter.net/examples/socks-megastore/after-simple/</a> &middot; <a href="https://youtu.be/ruuJr30FCTw">youtu.be/ruuJr30FCTw</a></div></section>
+  </div>
+  <div class="slide hidden  bg-fade socks-drawer" id="slide-13">
+    <section class="slide-content"><h2 id="2-adding-customisations">2. Adding customisations</h2>
+<h3 class="pun">&ldquo;Thinking outside the <strong>socks</strong>&rdquo;</h3>
+
+<div class="credit">By <a href="https://www.flickr.com/photos/sugarpants/5349120073">Nikol Lohr</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-14">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> details = {
+  displayItems: [
+    {
+      label: <span class="hljs-string">"Socks"</span>,
+      amount: { currency: <span class="hljs-string">"GBP"</span>, value : <span class="hljs-string">"12.00"</span> },
+    },
+    {
+      label: <span class="hljs-string">"Loyalty discount"</span>,
+      amount: { currency: <span class="hljs-string">"GBP"</span>, value : <span class="hljs-string">"-1.00"</span> },
+    }
+  ],
+  total: {
+    label: <span class="hljs-string">'Total'</span>, 
+    amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'11.00'</span>}
+  },
+  ...</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><pre><code class="lang-javascript">  ...
+  shippingOptions: [
+    {
+      id: <span class="hljs-string">'standard'</span>,
+      label: <span class="hljs-string">'Standard shipping'</span>,
+      amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'1.50'</span>},
+      selected: <span class="hljs-literal">true</span>
+    }
+  ]
+};</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
+  requestPayerName: <span class="hljs-literal">true</span>,
+  requestPayerEmail: <span class="hljs-literal">true</span>,
+  requestPayerPhone: <span class="hljs-literal">true</span>,
+  requestShipping: <span class="hljs-literal">true</span>
+};
+
+<span class="hljs-keyword">new</span> PaymentRequest(methodData, details, options)
+  ...</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><video src="videos/socks-megastore-options.mp4" controls></video>
+
+<div class="caption"><a href="http://samsunginter.net/examples/socks-megastore/after-options/">samsunginter.net/examples/socks-megastore/after-options/</a> &middot; <a href="https://youtu.be/BjEPBvn03i4">youtu.be/BjEPBvn03i4</a></div></section>
+  </div>
+  <div class="slide hidden  browser-support three-images" id="slide-18">
+    <section class="slide-content"><h2 id="browser-support">Browser support</h2>
+<table>
+  <tr>
+    <td><img src="images/chrome.png" alt="Chrome"></td>
+    <td><img src="images/sbrowser5.0.png" alt="Samsung Internet"></td>
+    <td><img src="images/edge.png" alt="Edge Preview"></td>
+  </tr>
+  <tr>
+    <td>Chrome for Android v53+</td>
+    <td>Samsung Internet v5.0+</td>
+    <td>Edge Preview</td>
+  </tr>
+</table>
+
+<div class="caption"><a href="http://caniuse.com/#feat=payment-request">caniuse.com/#feat=payment-request</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header" id="slide-19">
+    <section class="slide-content"><p><img src="images/chrome-desktop-socks.png" alt="Chrome desktop UI"></p>
+<h4 class="pun">&ldquo;Good things are <strong>afoot</strong> on the desktop&rdquo;</h4>
+
+<div class="caption">Currently <a href="https://twitter.com/poshaughnessy/status/841425232875286529">behind flags</a> in Chrome Canary</div></section>
+  </div>
+  <div class="slide hidden  align-top img-with-caption" id="slide-20">
+    <section class="slide-content"><p><img src="images/samsung-internet-beta-phone-blur.png" alt="Samsung Internet icon on homescreen"></p>
+<h3 class="pun">&ldquo;A <strong>shoe-in</strong> for your homescreen?</h3>
+
+<p><a href="http://bit.ly/samsung-internet-open-beta">bit.ly/samsung-internet-open-beta</a></p>
+</section>
+  </div>
+  <div class="slide hidden  bg-white img-with-caption payment-gateways" id="slide-21">
+    <section class="slide-content"><h3 id="payment-gateways">Payment Gateways</h3>
+<p><img src="images/web-payments-parties.png" alt="Payment parties"></p>
+<p class="pun">&ldquo;You might <strong>knit</strong> to know this...&rdquo;</p></section>
+  </div>
+  <div class="slide hidden  logos bg-white" id="slide-22">
+    <section class="slide-content"><h3 id="supporters-include-">Supporters include...</h3>
+<div class="flex"><img src="images/groupon.png" alt="Groupon"> <img src="images/mobify.png" alt="Mobify"> <img src="images/shopify.png" alt="Shopify"> <img src="images/washingtonpost.png" alt="Washington Post"> <img src="images/wepay.png" alt="WePay"> <img src="images/woocommerce.png" alt="Woo Commerce"> <img src="images/wwf.png" alt="WWF"></div>
+
+<h3 class="pun">&ldquo;Not just socks!&rdquo;</h3></section>
+  </div>
+  <div class="slide hidden  img-with-header" id="slide-23">
+    <section class="slide-content"><p><img src="images/polykart.png" alt="Polykart"></p>
+<h3 class="pun">&ldquo;A lock, <strong>sock</strong> and barrel example&rdquo;</h3>
+
+<div class="caption"><a href="https://polykart-credential-payment.appspot.com/">polykart-credential-payment.appspot.com</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><h2 id="future-possibilities-">Future possibilities...</h2>
+<h3 class="pun">&ldquo;It <strong>wool</strong> be great!&rdquo;</h3>
+
+<ul>
+<li>Gift cards / coupons</li>
+<li>Mobile payment app integrations</li>
+<li>Credentials/tokenisation standardisation?</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden  further-resources" id="slide-25">
+    <section class="slide-content"><h2 id="further-resources">Further resources</h2>
+<h3 class="pun">&ldquo;Following the same <strong>thread</strong>...&rdquo;</h3>
+
+<ul>
+<li><a href="medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f">bit.ly/how-to-take-web-payments</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/">bit.ly/payment-request-api-guide</a></li>
+<li><a href="https://developers.google.com/web/updates/2017/01/payment-request-updates">bit.ly/payment-request-updates</a></li>
+<li><a href="http://bit.ly/can-make-payment-sample">bit.ly/can-make-payment-sample</a></li>
+<li><a href="http://bit.ly/wepay-integration-docs">bit.ly/wepay-integration-docs</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden  bg-fade socks-pile" id="slide-26">
+    <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
+<h2 class="pun">&ldquo;Shoe wants to ask a question?&rdquo;</h2>
+
+<div class="contact">
+  <h3> <a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> </h3>
+  <h3> <a href="https://twitter.com/samsunginternet">@samsunginternet</a> </h3>
+</div>
+
+<div class="credit">By <a href="https://www.flickr.com/photos/darkmoon/3572345244">darkmoon</a></div></section>
+  </div>
+
+  <div class="controls">
+    <div class="arrow prev"></div>
+    <div class="arrow next"></div>
+  </div>
+
+
+  <script src="lib/faye-browser-min.js"></script>
+  <script type="text/javascript">
+    /**
+ * Returns the current page number of the presentation.
+ */
+function currentPosition() {
+  return parseInt(document.querySelector('.slide:not(.hidden)').id.slice(6));
+}
+
+
+/**
+ * Navigates forward n pages
+ * If n is negative, we will navigate in reverse
+ */
+function navigate(n) {
+  var position = currentPosition();
+  var numSlides = document.getElementsByClassName('slide').length;
+
+  /* Positions are 1-indexed, so we need to add and subtract 1 */
+  var nextPosition = (position - 1 + n) % numSlides + 1;
+
+  /* Normalize nextPosition in-case of a negative modulo result */
+  nextPosition = (nextPosition - 1 + numSlides) % numSlides + 1;
+
+  document.getElementById('slide-' + position).classList.add('hidden');
+  document.getElementById('slide-' + nextPosition).classList.remove('hidden');
+
+  updateProgress();
+  updateURL();
+  updateTabIndex();
+}
+
+
+/**
+ * Updates the current URL to include a hashtag of the current page number.
+ */
+function updateURL() {
+  window.history.replaceState({} , null, '#' + currentPosition());
+}
+
+
+/**
+ * Sets the progress indicator.
+ */
+function updateProgress() {
+  var progressBar = document.querySelector('.progress-bar');
+
+  if (progressBar !== null) {
+    var numSlides = document.getElementsByClassName('slide').length;
+    var position = currentPosition() - 1;
+    var percent = (numSlides === 1) ? 100 : 100 * position / (numSlides - 1);
+    progressBar.style.width = percent.toString() + '%';
+  }
+}
+
+
+/**
+ * Removes tabindex property from all links on the current slide, sets
+ * tabindex = -1 for all links on other slides. Prevents slides from appearing
+ * out of control.
+ */
+function updateTabIndex() {
+  var allLinks = document.querySelectorAll('.slide a');
+  var position = currentPosition();
+  var currentPageLinks = document.getElementById('slide-' + position).querySelectorAll('a');
+  var i;
+
+  for (i = 0; i < allLinks.length; i++) {
+    allLinks[i].setAttribute('tabindex', -1);
+  }
+
+  for (i = 0; i < currentPageLinks.length; i++) {
+    currentPageLinks[i].removeAttribute('tabindex');
+  }
+}
+
+/**
+ * Determines whether or not we are currently in full screen mode
+ */
+function isFullScreen() {
+  return document.fullscreenElement ||
+    document.mozFullScreenElement ||
+    document.webkitFullscreenElement ||
+    document.msFullscreenElement;
+}
+
+/**
+ * Toggle fullScreen mode on document element.
+ * Works on chrome (>= 15), firefox (>= 9), ie (>= 11), opera(>= 12.1), safari (>= 5).
+ */
+function toggleFullScreen() {
+  /* Convenient renames */
+  var docElem = document.documentElement;
+  var doc = document;
+
+  docElem.requestFullscreen =
+    docElem.requestFullscreen ||
+    docElem.msRequestFullscreen ||
+    docElem.mozRequestFullScreen ||
+    docElem.webkitRequestFullscreen.bind(docElem, Element.ALLOW_KEYBOARD_INPUT);
+
+  doc.exitFullscreen =
+    doc.exitFullscreen ||
+    doc.msExitFullscreen ||
+    doc.mozCancelFullScreen ||
+    doc.webkitExitFullscreen;
+
+  isFullScreen() ? doc.exitFullscreen() : docElem.requestFullscreen();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Update the tabindex to prevent weird slide transitioning
+  updateTabIndex();
+
+  // If the location hash specifies a page number, go to it.
+  var page = window.location.hash.slice(1);
+  if (page) {
+    navigate(parseInt(page) - 1);
+  }
+
+  document.onkeydown = function (e) {
+    var kc = e.keyCode;
+
+    // left, down, H, J, backspace, PgUp - BACK
+    // up, right, K, L, space, PgDn - FORWARD
+    // enter - FULLSCREEN
+    if (kc === 37 || kc === 40 || kc === 8 || kc === 72 || kc === 74 || kc === 33) {
+      navigate(-1);
+    } else if (kc === 38 || kc === 39 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
+      navigate(1);
+    } else if (kc === 13) {
+      toggleFullScreen();
+    }
+  };
+
+  if (document.querySelector('.next') && document.querySelector('.prev')) {
+    document.querySelector('.next').onclick = function (e) {
+      e.preventDefault();
+      navigate(1);
+    };
+
+    document.querySelector('.prev').onclick = function (e) {
+      e.preventDefault();
+      navigate(-1);
+    };
+  }
+});
+
+/**
+ * Swipe handling added by Peter
+ */
+
+var SWIPE_X_MIN = 50,
+    startX;
+
+document.body.addEventListener('touchstart', function(e) {
+  if (!e.touches || e.touches.length !== 1) {
+    return;
+  }
+  var touch = e.touches[0];
+  startX = touch.screenX;
+}, false);
+
+document.body.addEventListener('touchend', function(e) {
+  if (!e.changedTouches || e.changedTouches.length !== 1) {
+    return;
+  }
+  var touch = e.changedTouches[0];
+  var swipeXDist = touch.screenX - startX;
+  if (swipeXDist < -SWIPE_X_MIN) {
+    // Swipe to left = move right
+    navigate(1);
+  } else if (swipeXDist > SWIPE_X_MIN) {
+    // Swipe to right = move left
+    navigate(-1);
+  }
+}, false);
+
+
+/**
+ * Web Sockets (Faye) added by Peter - for remote control
+ * For running locally only
+ */
+if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+  var wsClient = new Faye.Client('http://localhost:9000/ws');
+
+  console.log('wsClient', wsClient);
+
+  wsClient.subscribe('/remote', function(message) {
+    console.log('Remote control command: ' + message);
+    switch (message) {
+      case 1: {
+        // Left
+        navigate(-1);
+        break;
+      }
+      case 2: {
+        // Right
+        navigate(1);
+        break;
+      }
+    }
+  });
+}
+
+
+/* Service worker registration - added by Peter, removed for now */
+/*
+if (navigator.serviceWorker) {
+
+  navigator.serviceWorker.register('sw.js')
+    .then(function(registration) {
+      console.log('Registration successful', registration.scope);
+    })
+    .catch(function(error) {
+      console.log('Failed - service worker not installed', error);
+    });
+
+}
+*/
+  </script>
+</body>
+</html>
