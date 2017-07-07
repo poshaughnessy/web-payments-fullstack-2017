@@ -1,0 +1,16 @@
+<svg width="106.09449" height="61.3622" xmlns="http://www.w3.org/2000/svg">
+
+ <metadata id="metadata8400">image/svg+xml</metadata>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="63.3622" width="108.09449" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect transform="matrix(1.3560283,0,0,1.3560283,101.45465,136.0292) " fill="#63ae63" fill-rule="evenodd" stroke="#108208" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="rect6935-6-9-5" width="54.556465" height="22.838461" x="-63.301082" y="-89.612299"/>
+  <rect transform="matrix(1.3560283,0,0,1.3560283,101.45465,136.0292) " fill="#589b58" fill-rule="evenodd" id="rect6971-5-9-3" width="48.071857" height="7.369495" x="-60.150452" y="-77.148899"/>
+  <text font-size="5.728523px" font-style="normal" font-weight="normal" fill="#9ec57c" font-family="Adobe Hebrew" xml:space="preserve" x="173.306898" y="274.51533" id="text7512" transform="translate(40.45088195800781,10.735917091369629) scale(0.8568392992019653,1) translate(-40.45088195800781,-10.735917091369629) translate(40.5181999206543,10.93972396850586) scale(0.9326810836791992,1) translate(-40.5181999206543,-10.93972396850586) translate(45.691654205322266,60.74665069580078) scale(0.8307602405548096,0.8105045557022095) translate(-45.691654205322266,-60.74665069580078) translate(-248.51988220214844,-306.77825927734375) scale(1.1796530485153198,0.8477068543434143) matrix(1.3560283,0,0,1.3560282999999997,10.99860576777067,31.623500193698078) ">
+   <tspan font-size="34.37114px" font-style="normal" font-weight="bold" fill="#9ec57c" font-family="Aharoni" id="tspan7514" x="173.306898" y="274.51533">$</tspan>
+  </text>
+ </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="123.09449" height="78.3622" xmlns="http://www.w3.org/2000/svg">
+
+ <metadata id="metadata8400">image/svg+xml</metadata>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="80.3622" width="125.09449" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g transform="matrix(1.3560283,0,0,1.3560283,-83.595699,108.66067) " id="g8279">
+   <g id="g7271">
+    <path fill="#085508" fill-rule="evenodd" stroke-width="2.6" id="rect6973-9-0" d="m78.065984,-60.489853c-0.39247,0.0331 -0.72841,0.38446 -0.73266,0.76634l0,22.8407c-0.004,0.4121 0.38468,0.78897 0.80979,0.78503l55.39366,0c0.42511,0.004 0.81386,-0.37293 0.80979,-0.78503l0,-22.8407c-0.006,-0.40586 -0.39109,-0.77024 -0.80979,-0.76634l-55.39366,0c-0.0257,-0.001 -0.0515,-0.001 -0.0771,0l-0.00003,0z"/>
+    <rect fill="#63ae63" fill-rule="evenodd" stroke="#108208" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" y="-65.897203" x="78.625714" height="22.838461" width="54.431465" id="rect6935-6-9"/>
+    <rect fill="#589b58" fill-rule="evenodd" y="-53.433793" x="81.776354" height="7.369495" width="48.071857" id="rect6971-5-9"/>
+    <rect fill="#ffeba5" fill-rule="evenodd" y="-67.270773" x="100.869534" height="25.481733" width="9.545941" id="rect7116"/>
+    <rect fill="#decb8c" fill-rule="evenodd" y="-41.877433" x="100.869534" height="5.778608" width="9.545941" id="rect7116-6"/>
+   </g>
+  </g>
+ </g>
+</svg>

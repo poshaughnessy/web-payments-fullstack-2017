@@ -1,0 +1,16 @@
+<svg width="111.09449" height="70.3622" xmlns="http://www.w3.org/2000/svg">
+
+ <metadata id="metadata8400">image/svg+xml</metadata>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="72.3622" width="113.09449" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="g8287">
+   <path fill="#808080" fill-rule="evenodd" stroke-width="2.6" d="m15.133273,21.745108c-0.5322,0.0449 -0.98774,0.52133 -0.9935,1.03917l0,30.97264c-0.005,0.55882 0.52163,1.06987 1.09809,1.06453l75.11537,0c0.57646,0.005 1.10362,-0.50571 1.0981,-1.06453l0,-30.97264c-0.008,-0.55035 -0.53033,-1.04446 -1.0981,-1.03917l-75.11537,0c-0.0348,-0.001 -0.0698,-0.001 -0.10452,0l-0.00007,0z" id="rect6973-9-1"/>
+   <rect fill="#dcdcdc" fill-rule="evenodd" stroke="#9f9f9f" stroke-width="3.525673" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="rect6935-6-1" width="73.98011" height="30.969599" x="15.892257" y="14.412528"/>
+   <rect fill="#bdbdbd" fill-rule="evenodd" id="rect6971-5-97" width="65.186798" height="9.034388" x="20.164627" y="32.272118"/>
+  </g>
+ </g>
+</svg>

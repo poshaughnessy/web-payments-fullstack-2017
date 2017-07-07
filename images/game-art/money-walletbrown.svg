@@ -1,0 +1,43 @@
+<svg width="120.09449" height="120.3622" xmlns="http://www.w3.org/2000/svg">
+
+ <metadata id="metadata8400">image/svg+xml</metadata>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="122.3622" width="122.09449" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="g7542-8" transform="matrix(1.172475821141812,-0.14436666461922099,0.13417453895189296,1.2615390683113787,139.19646114456123,71.06549779609719) ">
+   <rect fill="#63ae63" fill-rule="evenodd" stroke="#108208" stroke-width="2.880146" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" y="-29.791874" x="-96.743754" height="22.838461" width="54.556465" id="rect6935-6-9-5-3"/>
+   <rect fill="#589b58" fill-rule="evenodd" y="-17.328464" x="-93.593124" height="7.369495" width="48.071857" id="rect6971-5-9-3-9"/>
+   <text font-size="5.728523px" font-style="normal" font-weight="normal" fill="#9ec57c" font-family="Adobe Hebrew" transform="translate(-305.873779296875,-256.16168212890625) scale(1.1796530485153198,0.8477068543434143) " id="text7512-3" y="287.948946" x="193.37724" xml:space="preserve">
+    <tspan font-size="34.37114px" font-style="normal" font-weight="bold" fill="#9ec57c" font-family="Aharoni" y="287.948946" x="193.37724" id="tspan7514-9">$</tspan>
+   </text>
+  </g>
+  <g id="g7542-8-6" transform="matrix(-1.172475821141812,-0.14436666461922099,-0.13417453895189296,1.2615390683113787,758.1686046874111,72.70535502354187) ">
+   <rect fill="#63ae63" fill-rule="evenodd" stroke="#108208" stroke-width="2.880146" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" y="45.932247" x="564.966878" height="22.838461" width="54.556465" id="rect6935-6-9-5-3-7"/>
+   <rect fill="#589b58" fill-rule="evenodd" y="58.395657" x="568.117508" height="7.369495" width="48.071857" id="rect6971-5-9-3-9-9"/>
+   <text font-size="5.728523px" font-style="normal" font-weight="normal" fill="#9ec57c" font-family="Adobe Hebrew" transform="translate(355.83685302734375,-180.43756103515625) scale(1.1796530485153198,0.8477068543434143) " id="text7512-3-9" y="287.948946" x="193.37724" xml:space="preserve">
+    <tspan font-size="34.37114px" font-style="normal" font-weight="bold" fill="#9ec57c" font-family="Aharoni" y="287.948946" x="193.37724" id="tspan7514-9-7">$</tspan>
+   </text>
+  </g>
+  <g transform="matrix(1.3560283,0,0,1.3560283,102.09205,103.00202) " id="g7713-6">
+   <path fill="#808080" fill-rule="nonzero" stroke-width="2.2" id="path7213-7-2-9-5-9" d="m-19.018652,-30.392583c0,0 0.003,1.02714 0.003,1.39473c0,2.86891 2.31775,5.20802 5.17683,5.20802c2.85906,0 5.19014,-2.33911 5.19014,-5.20802c0,-0.3675 -0.0109,-1.4274 -0.0109,-1.4274l-10.35907,0.03267z"/>
+   <path fill="#dcdcdc" stroke="#9f9f9f" stroke-width="3.157008" stroke-miterlimit="4" d="m-9.277427,-30.27034c0,2.528427 -2.024229,4.578122 -4.521241,4.578122c-2.497017,0 -4.521245,-2.049695 -4.521245,-4.578122c0,-2.528431 2.024229,-4.578126 4.521245,-4.578126c2.497013,0 4.521241,2.049695 4.521241,4.578126z" id="path7204-4-9-1-2-3"/>
+   <path fill="#bdbdbd" id="path7206-3-5-8-5-5" d="m-16.701662,-29.931713c-0.002,0.0507 -0.0107,0.0978 -0.0107,0.14903c0,1.57977 1.25736,2.8636 2.8175,2.8636c1.56013,0 2.82802,-1.28383 2.82802,-2.8636c0,-0.0512 -0.008,-0.0984 -0.0107,-0.14903l-5.62449,0l0.00037,0z"/>
+  </g>
+  <g transform="matrix(1.3560283,0,0,1.3560283,102.09205,103.00202) " id="g7761-7">
+   <path fill="#837055" fill-rule="nonzero" stroke-width="2.2" id="path7213-7-2-9-6" d="m-20.125185,-36.793573c0,0 0.003,0.84857 0.003,1.15226c0,2.37015 1.91088,4.30261 4.26803,4.30261c2.35714,0 4.27899,-1.93246 4.27899,-4.30261c0,-0.30361 -0.009,-1.17925 -0.009,-1.17925l-8.54102,0.02699z"/>
+   <path fill="#c9b18f" stroke="#a28d70" stroke-width="3.929552" stroke-miterlimit="4" d="m-12.236084,-36.695862c0,2.035279 -1.623123,3.685199 -3.625346,3.685199c-2.002227,0 -3.62535,-1.64992 -3.62535,-3.685199c0,-2.035282 1.623123,-3.685202 3.62535,-3.685202c2.002223,0 3.625346,1.64992 3.625346,3.685202z" id="path7204-4-9-1-6"/>
+   <path fill="#b59e7d" id="path7206-3-5-8-58" d="m-18.189195,-36.423283c-0.002,0.0408 -0.009,0.0787 -0.009,0.11996c0,1.27165 1.0082,2.30508 2.25919,2.30508c1.25099,0 2.26765,-1.03343 2.26765,-2.30508c0,-0.0412 -0.007,-0.0792 -0.009,-0.11996l-4.50999,0l0.00115,0z"/>
+  </g>
+  <g id="g7867" transform="matrix(1.2596615386477648,0,0,1.41462865617601,131.29019780665638,52.08944117014221) ">
+   <path fill="#423621" fill-rule="evenodd" stroke-width="2.6" id="rect6973-9-0-9" d="m-88.313566,-6.243822c-0.34246,0.0378 -0.63561,0.43964 -0.63932,0.87635l0,26.11968c-0.004,0.47126 0.33567,0.90223 0.70663,0.89773l48.33707,0c0.37096,0.005 0.71017,-0.42647 0.70663,-0.89773l0,-26.11968c-0.006,-0.46413 -0.34127,-0.88082 -0.70663,-0.87635l-48.33707,0c-0.0225,-0.00097 -0.0449,-0.00097 -0.0673,0l-0.00001,0z"/>
+   <rect fill="#625231" fill-rule="evenodd" stroke="#504128" stroke-width="2.641155" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" y="-9.775322" x="-87.617186" height="26.117123" width="47.056759" id="rect6935-6-9-1"/>
+   <rect fill="#56462b" fill-rule="evenodd" y="4.733988" x="-84.899656" height="8.427451" width="41.46357" id="rect6971-5-9-2"/>
+  </g>
+  <text font-size="6.792831px" font-style="normal" font-weight="normal" fill="#7a663d" font-family="Adobe Hebrew" xml:space="preserve" x="216.417422" y="201.800196" id="text7512-6" transform="matrix(1.03352496392064,0,0,0.9464281341544808,-184.78886967835598,-121.86483285659182) ">
+   <tspan font-size="40.756989px" font-style="normal" font-weight="bold" fill="#7a663d" font-family="Aharoni" id="tspan7514-1" x="216.417422" y="201.800196">$</tspan>
+  </text>
+ </g>
+</svg>
