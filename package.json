@@ -1,0 +1,21 @@
+{
+  "name": "fullstack-2017-web-payments",
+  "version": "0.1.0",
+  "description": "Presentation slides",
+  "scripts": {
+    "start": "npm run watch & npm run serve",
+    "serve": "node server",
+    "build": "cleaver src/index.md && echo 'Finished cleaver build'",
+    "build:debug": "cleaver --debug src/index.md && echo 'Finished cleaver build'",
+    "watch": "watch 'npm run build' src"
+  },
+  "devDependencies": {
+    "bleno": "^0.4.1",
+    "cleaver": "^0.8.2",
+    "express": "^4.14.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "faye": "^1.2.3"
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="{{encoding}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#987fff">
+  <title>{{title}}</title>
+  <style type="text/css">
+    {{{style}}}
+  </style>
+  {{#options.watch}}
+    <script async src="http://localhost:35729/livereload.js"></script>
+  {{/options.watch}}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+  <link rel="icon" href="images/favicon.png" type=”image/png">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  {{{slideshow}}}
+
+  <script src="lib/faye-browser-min.js"></script>
+  <script type="text/javascript">
+    {{{script}}}
+  </script>
+</body>
+</html>
