@@ -3,12 +3,11 @@ output: public/index.html
 theme: peter-theme
 controls: true
 
--- bg-fade card-closeup
+--
 
-# Web Payments
+![Web](images/game-art/web-goldcoins.svg)
+![Payments](images/game-art/payments-silvercoins.svg)
 ## and the future of online purchases
-
-<h2 class="emoji">💳</h2>
 
 <div class="contact">
   <p>Peter O'Shaughnessy</p>
