@@ -25,3 +25,10 @@ as a presentation remote: http://localhost:9000/remote.html
 Press Connect and (as long as you have the Node server running and Bluetooth enabled on both devices) you should see
 a device option called 'Remote Receiver'. Select that, wait til it says Connected, then you can use the buttons to send 
 commands!
+
+
+## To deploy (for Peter's reference)
+
+```
+npm run deploy
+```
