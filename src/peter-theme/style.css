@@ -725,6 +725,10 @@ h2 + .quote {
   filter: blur(6px) brightness(0.3);
 }
 
+.slide.bg-sadmario:before {
+  background-image: url(images/sadmario-travis-edit.jpg);
+}
+
 .slide.bg-mario:before {
   background-image: url(images/mario-sergey.jpg);
 }
