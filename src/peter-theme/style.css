@@ -672,6 +672,13 @@ h2 + .quote {
   border-radius: 1em;
 }
 
+.logos .flex {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0.5em 2em;
+  border-radius: 1em;
+}
+
 .three-images .slide-content p img {
   max-width: 32%;
 }
@@ -757,8 +764,24 @@ h2 + .quote {
   color: #c4c3f5
 }
 
-.browser-support table {
+.browser-support .container {
   margin: 2em 0;
+}
+
+.browser-support .container div {
+  max-width: 25%;
+  box-sizing: border-box;
+  float: left;
+  padding: 1em;
+}
+
+.browser-support .container img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.browser-support .container p {
+  font-size: 0.9em;
 }
 
 .further-resources li {

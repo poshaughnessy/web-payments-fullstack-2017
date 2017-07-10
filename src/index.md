@@ -49,11 +49,7 @@ controls: true
 
 --
 
-## 1. Our first sock sale
-
-<h3 class="pun">&ldquo;Getting our <strong>foot</strong> in the door&rdquo;</h3>
-
-<div class="credit">By [Gus Greeper](https://www.flickr.com/photos/gusgreeper/8329453791)</div>
+## 1. Our first sale
 
 --
 
@@ -113,10 +109,6 @@ new PaymentRequest(methodData, details)
 
 ## 2. Adding customisations
 
-<h3 class="pun">&ldquo;Thinking outside the <strong>socks</strong>&rdquo;</h3>
-
-<div class="credit">By [Nikol Lohr](https://www.flickr.com/photos/sugarpants/5349120073)</div>
-
 --
 
 ```javascript
@@ -173,22 +165,30 @@ new PaymentRequest(methodData, details, options)
 
 <div class="caption">[samsunginter.net/examples/socks-megastore/after-options/](http://samsunginter.net/examples/socks-megastore/after-options/) &middot; [youtu.be/BjEPBvn03i4](https://youtu.be/BjEPBvn03i4)</div>
 
--- browser-support three-images
+-- browser-support four-images
 
 ## Browser support
 
-<table>
-  <tr>
-    <td>![Chrome](images/chrome.png)</td>
-    <td>![Samsung Internet](images/sbrowser5.0.png)</td>
-    <td>![Edge Preview](images/edge.png)</td>
+<div class="container">
+    <div>
+      ![Chrome](images/chrome.png)
+      <p>Chrome desktop beta (v53+ with flag)</p>
+    </div>
+    <div>
+      ![Chrome for Android](images/chrome-android.png)
+      <p>Chrome for Android v53+</p>
+    </div>
+    <div>
+      ![Samsung Internet](images/sbrowser5.4.png)
+      <p>Samsung Internet v5.0+</p>
+    </div>
+    <div>
+      ![Edge Preview](images/edge.png)
+      <p>Edge v15+</p>
+    </div>
   </tr>
   <tr>
-    <td>Chrome for Android v53+</td>
-    <td>Samsung Internet v5.0+</td>
-    <td>Edge Preview</td>
-  </tr>
-</table>
+</div>
 
 <div class="caption">[caniuse.com/#feat=payment-request](http://caniuse.com/#feat=payment-request)</div>
 
@@ -196,17 +196,13 @@ new PaymentRequest(methodData, details, options)
 
 ![Chrome desktop UI](images/chrome-desktop-socks.png)
 
-<h4 class="pun">&ldquo;Good things are <strong>afoot</strong> on the desktop&rdquo;</h4>
+<div class="caption">Here's how it looks on desktop</div>
 
-<div class="caption">Currently [behind flags](https://twitter.com/poshaughnessy/status/841425232875286529) in Chrome Canary</div>
+-- img-with-header
 
--- align-top img-with-caption
+TODO try on DeX
 
-![Samsung Internet icon on homescreen](images/samsung-internet-beta-phone-blur.png)
-
-<h3 class="pun">&ldquo;A <strong>shoe-in</strong> for your homescreen?</h3>
-
-[bit.ly/samsung-internet-open-beta](http://bit.ly/samsung-internet-open-beta)
+<div class="caption">And in Samsung DeX</div>
 
 -- img-with-caption payment-gateways
 
@@ -214,33 +210,35 @@ new PaymentRequest(methodData, details, options)
 
 ![Payment parties](images/web-payments-parties.png)
 
-<p class="pun">&ldquo;You might <strong>knit</strong> to know this...&rdquo;</p>
-
 -- logos bg-white
 
 ### Supporters include...
 
 <div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![WePay](images/wepay.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div>
 
-<h3 class="pun">&ldquo;Not just socks!&rdquo;</h3>
-
 -- img-with-header
 
 ![Polykart](images/polykart.png)
-
-<h3 class="pun">&ldquo;A lock, <strong>sock</strong> and barrel example&rdquo;</h3>
 
 <div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>
 
 --
 
-## Future possibilities...
+## What's next?
 
-<h3 class="pun">&ldquo;It <strong>wool</strong> be great!&rdquo;</h3>
-
-* Gift cards / coupons
 * Mobile payment app integrations
+* Payment Handler API
+* Gift cards / coupons?
 * Credentials/tokenisation standardisation?
+
+-- bg-fade
+
+# Thanks!
+
+<div class="contact">
+  <h3> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
+  <h3> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
+</div>
 
 -- further-resources
 
@@ -254,15 +252,3 @@ new PaymentRequest(methodData, details, options)
 * [bit.ly/can-make-payment-sample](http://bit.ly/can-make-payment-sample)
 * [bit.ly/wepay-integration-docs](http://bit.ly/wepay-integration-docs)
 
--- bg-fade socks-pile
-
-# Thanks!
-
-<h2 class="pun">&ldquo;Shoe wants to ask a question?&rdquo;</h2>
-
-<div class="contact">
-  <h3> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
-  <h3> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
-</div>
-
-<div class="credit">By [darkmoon](https://www.flickr.com/photos/darkmoon/3572345244)</div>
