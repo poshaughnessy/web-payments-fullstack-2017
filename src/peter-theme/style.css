@@ -82,6 +82,10 @@ video {
   max-height: 85vh;
 }
 
+video + .caption {
+  font-size: 0.6em;
+}
+
 .controls {
   position: absolute;
   bottom: 10px;
@@ -310,7 +314,7 @@ pre {
 pre code {
   display: block;
   color: #444;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.5em;
   overflow-y: hidden;
   background: transparent;
@@ -700,6 +704,11 @@ h2 + .quote {
   max-height: 5em;
   padding: 0 1em;
   margin-bottom: 0.5em;
+}
+
+.gold-coins img {
+  margin-top: 1em;
+  width: 5em;
 }
 
 .logos .pun {

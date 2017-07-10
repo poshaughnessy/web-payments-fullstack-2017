@@ -13,6 +13,7 @@
 * game-art/pieces: https://opengameart.org/content/bombada
 * game-art/gold: https://opengameart.org/content/gold-treasure-icons
 * game-art/goldcoin: https://opengameart.org/content/spinning-gold-coin
+* game-art/goldcoin2: https://opengameart.org/content/gold-coin-2
 * game-art/pixelchest: https://opengameart.org/content/pixel-chest-and-coin
 
 (The other game art images are public domain)

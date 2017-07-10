@@ -19,7 +19,7 @@ controls: false
 
 ![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
 
-#### &ldquo;I just want to buy something&rdquo; 😱
+#### &ldquo;I just wanna buy something&rdquo; 😱
 
 --
 
@@ -29,9 +29,9 @@ controls: false
 
 --
 
-## 66% fewer conversions on mobile than desktop
+## 84% abandonment rate on mobile
 
-<div class="caption">Source: [Google Chrome](https://twitter.com/chromiumdev/status/796809709281939456)</div>
+<div class="caption">Source: [Cloud.IQ via econsultancy.com](https://econsultancy.com/blog/64343-checkout-abandonment-mobile-ux-examples-to-help-boost-conversions/)</div>
 
 -- img-with-caption
 
@@ -47,9 +47,11 @@ controls: false
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
---
+-- gold-coins
 
 ## 1. Our first sale
+
+![Gold coins](images/game-art/goldcoin2/coins-less.svg)
 
 --
 
@@ -103,11 +105,13 @@ new PaymentRequest(methodData, details)
 
 <video src="videos/socks-megastore-simple.mp4" controls></video>
 
-<div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/) &middot; [youtu.be/ruuJr30FCTw](https://youtu.be/ruuJr30FCTw)</div>
+<div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/)</div>
 
---
+-- gold-coins
 
-## 2. Adding customisations
+## 2. Adding options
+
+![More gold coins](images/game-art/goldcoin2/coins-more.svg)
 
 --
 
@@ -163,7 +167,7 @@ new PaymentRequest(methodData, details, options)
 
 <video src="videos/socks-megastore-options.mp4" controls></video>
 
-<div class="caption">[samsunginter.net/examples/socks-megastore/after-options/](http://samsunginter.net/examples/socks-megastore/after-options/) &middot; [youtu.be/BjEPBvn03i4](https://youtu.be/BjEPBvn03i4)</div>
+<div class="caption">[samsunginter.net/examples/socks-megastore/after-options/](http://samsunginter.net/examples/socks-megastore/after-options/)</div>
 
 -- browser-support four-images
 
