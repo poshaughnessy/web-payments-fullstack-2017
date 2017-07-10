@@ -17,6 +17,7 @@
 * mariocloseup-dave: https://www.flickr.com/photos/undeleterious/2185759507
 * marioflying-jun: https://www.flickr.com/photos/junjhen/3455504828
 * mariocoin-avery: https://www.flickr.com/photos/kylemhayes/3746664569
+* mariocoins-kent: https://www.flickr.com/photos/kentbrew/2550957151
 * sadmario-travis: https://www.flickr.com/photos/taestell/27988335225
 
 * game-art/pieces: https://opengameart.org/content/bombada
