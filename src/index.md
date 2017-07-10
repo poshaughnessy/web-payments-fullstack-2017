@@ -20,11 +20,11 @@ controls: false
 
 ![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
 
-#### &ldquo;I just wanna buy something&rdquo; 😱
+#### &ldquo;I just wanna buy something&rdquo;
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- goomba valign-top
+-- bg-goomba valign-top
 
 ## 69% of shopping carts are abandoned
 
@@ -32,7 +32,7 @@ controls: false
 
 <div class="credit">[Flavio Ensiki](https://www.flickr.com/photos/flavouz/5086859227)</div>
 
--- boo-ghost valign-top
+-- bg-booghost valign-top
 
 ## 84% abandonment rate on mobile
 
@@ -54,7 +54,7 @@ controls: false
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
--- gold-coins
+-- gold-coins bg-mariocoin1 bg-fade
 
 ## 1. Our first sale
 
@@ -114,7 +114,7 @@ new PaymentRequest(methodData, details)
 
 <div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/)</div>
 
--- gold-coins
+-- gold-coins bg-mariocoin2 bg-fade
 
 ## 2. Adding options
 

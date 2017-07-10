@@ -725,16 +725,32 @@ h2 + .quote {
   filter: blur(6px) brightness(0.3);
 }
 
+.slide.bg-mario:before {
+  background-image: url(images/mario-sergey.jpg);
+}
+
+.slide.bg-mariocloseup:before {
+  background-image: url(images/mariocloseup-dave.jpg);
+}
+
 .slide.bg-bowser:before {
   background-image: url(images/marioluigibowser-brick101.jpg);
 }
 
-.slide.goomba:before {
+.slide.bg-goomba:before {
   background-image: url(images/goomba-flavio.jpg);
 }
 
-.slide.boo-ghost:before {
+.slide.bg-booghost:before {
   background-image: url(images/booghost-fujoshi.jpg);
+}
+
+.slide.bg-mariocoin1:before {
+  background-image: url(images/mariocoin-avery.jpg);
+}
+
+.slide.bg-mariocoin2:before {
+  background-image: url(images/mariocoins-kent.jpg);
 }
 
 .emoji {
