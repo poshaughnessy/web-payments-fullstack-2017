@@ -20,9 +20,7 @@ controls: false
 
 ![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
 
-#### &ldquo;I just wanna buy something&rdquo;
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+<div class="credit">[Travis Estell](https://www.flickr.com/photos/taestell/27988335225)</div>
 
 -- bg-goomba valign-top
 
@@ -46,13 +44,19 @@ controls: false
 
 <div class="caption">[baymard.com/lists/cart-abandonment-rate](https://baymard.com/lists/cart-abandonment-rate)</div>
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- img-with-caption bg-bowser bg-fade
 
 ## Web Payments to the rescue
 
+<div class="credit">[Brick 101](https://www.flickr.com/photos/fallentomato/19926463890)</div>
+
 --
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- gold-coins bg-mariocoin1 bg-fade
 
@@ -60,9 +64,13 @@ controls: false
 
 ![Gold coins](images/game-art/goldcoin2/coins-less.svg)
 
+<div class="credit">[Aviery Edison](https://www.flickr.com/photos/kylemhayes/3746664569)</div>
+
 --
 
 ![Sock sale](images/payment-request-socks-simple.png)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 --
 
@@ -73,6 +81,8 @@ if (window.PaymentRequest) {
   // Alas! Use your legacy checkout form...
 }
 ```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 --
 
@@ -93,6 +103,9 @@ var details = {
   }
 };
 ```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 --
 
 ```javascript
@@ -108,17 +121,23 @@ new PaymentRequest(methodData, details)
   });
 ```
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 --
 
 <video src="videos/socks-megastore-simple.mp4" controls></video>
 
 <div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/)</div>
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- gold-coins bg-mariocoin2 bg-fade
 
 ## 2. Adding options
 
 ![More gold coins](images/game-art/goldcoin2/coins-more.svg)
+
+<div class="credit">[Kent Brewster](https://www.flickr.com/photos/kentbrew/2550957151)</div>
 
 --
 
@@ -140,6 +159,8 @@ var details = {
   },
   ...
 ```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
   
 --
 
@@ -156,6 +177,8 @@ var details = {
 };
 ```
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 --
 
 ```javascript
@@ -170,11 +193,15 @@ new PaymentRequest(methodData, details, options)
   ...
 ```
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 --
 
 <video src="videos/socks-megastore-options.mp4" controls></video>
 
 <div class="caption">[samsunginter.net/examples/socks-megastore/after-options/](http://samsunginter.net/examples/socks-megastore/after-options/)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- browser-support four-images
 
@@ -203,11 +230,15 @@ new PaymentRequest(methodData, details, options)
 
 <div class="caption">[caniuse.com/#feat=payment-request](http://caniuse.com/#feat=payment-request)</div>
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- img-with-header
 
 ![Chrome desktop UI](images/chrome-desktop-socks.png)
 
 <div class="caption">Here's how it looks on desktop</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-header
 
@@ -215,17 +246,23 @@ TODO try on DeX
 
 <div class="caption">And in Samsung DeX</div>
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- img-with-caption payment-gateways
 
 ### Payment Gateways
 
 ![Payment parties](images/web-payments-parties.png)
 
--- logos bg-white
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- logos
 
 ### Supporters include...
 
 <div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![WePay](images/wepay.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-header
 
@@ -233,7 +270,9 @@ TODO try on DeX
 
 <div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>
 
---
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- bg-mariohooray
 
 ## What's next?
 
@@ -241,6 +280,8 @@ TODO try on DeX
 * Payment Handler API
 * Gift cards / coupons?
 * Credentials/tokenisation standardisation?
+
+<div class="credit">[Laurence Vagner](https://www.flickr.com/photos/redisdead/2165783016)</div>
 
 -- thanks
 
@@ -253,6 +294,8 @@ TODO try on DeX
   <h3 class="social"> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
 </div>
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- further-resources
 
 ## Further resources
@@ -263,3 +306,4 @@ TODO try on DeX
 * [bit.ly/can-make-payment-sample](http://bit.ly/can-make-payment-sample)
 * [bit.ly/wepay-integration-docs](http://bit.ly/wepay-integration-docs)
 
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>

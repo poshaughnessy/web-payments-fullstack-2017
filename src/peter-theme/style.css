@@ -726,7 +726,10 @@ h2 + .quote {
 }
 
 .slide.bg-sadmario:before {
-  background-image: url(images/sadmario-travis-edit.jpg);
+  background-image: url(images/sadmario-travis-edit2.jpg);
+  -webkit-filter: blur(1px) brightness(0.6);
+  filter: blur(1px) brightness(0.6);
+  box-shadow: inset 0 0 5em 1em #333; /* Less vignette */
 }
 
 .slide.bg-mario:before {
@@ -742,7 +745,7 @@ h2 + .quote {
 }
 
 .slide.bg-goomba:before {
-  background-image: url(images/goomba-flavio.jpg);
+  background-image: url(images/goomba-flavio-edit.jpg);
 }
 
 .slide.bg-booghost:before {
@@ -755,6 +758,10 @@ h2 + .quote {
 
 .slide.bg-mariocoin2:before {
   background-image: url(images/mariocoins-kent.jpg);
+}
+
+.slide.bg-mariohooray:before {
+  background-image: url(images/mariohooray-laurence.jpg);
 }
 
 .emoji {
