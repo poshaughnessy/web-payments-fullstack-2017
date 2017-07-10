@@ -1,7 +1,7 @@
 title: Web Payments
 output: public/index.html
 theme: peter-theme
-controls: true
+controls: false
 
 --
 
@@ -231,20 +231,20 @@ TODO try on DeX
 * Gift cards / coupons?
 * Credentials/tokenisation standardisation?
 
--- bg-fade
+-- thanks
 
 # Thanks!
 
+![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
+
 <div class="contact">
-  <h3> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
-  <h3> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
+  <h3 class="social"> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
+  <h3 class="social"> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
 </div>
 
 -- further-resources
 
 ## Further resources
-
-<h3 class="pun">&ldquo;Following the same <strong>thread</strong>...&rdquo;</h3>
 
 * [bit.ly/how-to-take-web-payments](medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
 * [bit.ly/payment-request-api-guide](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
