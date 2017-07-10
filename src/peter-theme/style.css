@@ -524,7 +524,7 @@ pre .xml .cdata {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 0.5em;
+  font-size: 0.4em;
   color: #666;
 }
 
@@ -642,6 +642,10 @@ h2 + .quote {
   width: 75%;
 }
 
+.valign-top h2 {
+  margin: 1em 0;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -725,26 +729,12 @@ h2 + .quote {
   background-image: url(images/marioluigibowser-brick101.jpg);
 }
 
-.slide.card-closeup:before {
-  background-image: url(images/card-closeup-purple.jpg);
-  -webkit-filter: blur(6px) brightness(0.3);
-  filter: blur(6px) brightness(0.3);
+.slide.goomba:before {
+  background-image: url(images/goomba-flavio.jpg);
 }
 
-.slide.what-if:before {
-  background-image: url(images/help.jpg);
-}
-
-.slide.socks-pile:before {
-  background-image: url(images/socks-pile.jpg);
-}
-
-.slide.socks-drawer:before {
-  background-image: url(images/socks-drawer.jpg);
-}
-
-.slide.socks-stack:before {
-  background-image: url(images/socks-stack.jpg);
+.slide.boo-ghost:before {
+  background-image: url(images/booghost-fujoshi.jpg);
 }
 
 .emoji {

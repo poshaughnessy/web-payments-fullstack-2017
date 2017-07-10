@@ -10,10 +10,11 @@ controls: false
 ## and the future of online purchases
 
 <div class="contact">
-  <p>Peter O'Shaughnessy</p>
   <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
   <p class="social">[@samsunginternet](https://twitter.com/samsunginternet)</p>
 </div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-caption five-images
 
@@ -21,17 +22,23 @@ controls: false
 
 #### &ldquo;I just wanna buy something&rdquo; 😱
 
---
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- goomba valign-top
 
 ## 69% of shopping carts are abandoned
 
 <div class="caption">Source: [Baymard Institute](https://baymard.com/lists/cart-abandonment-rate)</div>
 
---
+<div class="credit">[Flavio Ensiki](https://www.flickr.com/photos/flavouz/5086859227)</div>
+
+-- boo-ghost valign-top
 
 ## 84% abandonment rate on mobile
 
 <div class="caption">Source: [Cloud.IQ via econsultancy.com](https://econsultancy.com/blog/64343-checkout-abandonment-mobile-ux-examples-to-help-boost-conversions/)</div>
+
+<div class="credit">[Fujoshi Bijou](https://www.flickr.com/photos/fujoshi/4277809127)</div>
 
 -- img-with-caption
 

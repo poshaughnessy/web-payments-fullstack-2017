@@ -9,6 +9,8 @@
 * euros-olli: https://www.flickr.com/photos/gruenewiese/15273355137
 * mariobackground-rayche: https://www.flickr.com/photos/rayche1989/5203972988
 * marioluigibowser-brick101: https://www.flickr.com/photos/fallentomato/19926463890/
+* goomba-flavio: https://www.flickr.com/photos/flavouz/5086859227
+* booghost-fujoshi: https://www.flickr.com/photos/fujoshi/4277809127
 
 * game-art/pieces: https://opengameart.org/content/bombada
 * game-art/gold: https://opengameart.org/content/gold-treasure-icons
