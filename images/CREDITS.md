@@ -11,6 +11,12 @@
 * marioluigibowser-brick101: https://www.flickr.com/photos/fallentomato/19926463890/
 * goomba-flavio: https://www.flickr.com/photos/flavouz/5086859227
 * booghost-fujoshi: https://www.flickr.com/photos/fujoshi/4277809127
+* mario-sergey: https://www.flickr.com/photos/sergesegal/6510960541
+* mariohooray-laurence: https://www.flickr.com/photos/redisdead/2165783016
+* mariojump-sylaf: https://www.flickr.com/photos/sylaf/3732022093
+* mariocloseup-dave: https://www.flickr.com/photos/undeleterious/2185759507
+* marioflying-jun: https://www.flickr.com/photos/junjhen/3455504828
+* mariocoin-avery: https://www.flickr.com/photos/kylemhayes/3746664569
 
 * game-art/pieces: https://opengameart.org/content/bombada
 * game-art/gold: https://opengameart.org/content/gold-treasure-icons
