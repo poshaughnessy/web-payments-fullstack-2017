@@ -39,7 +39,7 @@ body {
   width: 100%;
   height: auto;
   max-height: 100%;
-  padding: 1em;
+  padding: 1.5em;
   box-sizing: border-box;
   margin: 0 auto;
   font-size: 120%;
@@ -646,16 +646,8 @@ h2 + .quote {
   flex-wrap: wrap;
 }
 
-.bg-white h3 {
-  color: #333;
-}
-
-.bg-white .pun {
-  color: #706cf5;
-}
-
 #slide-1 h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #slide-1 h2.emoji {
@@ -674,6 +666,12 @@ h2 + .quote {
   font-size: 0.9em;
 }
 
+.payment-gateways img {
+  background: #fff;
+  padding: 0.5em 2em;
+  border-radius: 1em;
+}
+
 .three-images .slide-content p img {
   max-width: 32%;
 }
@@ -683,7 +681,7 @@ h2 + .quote {
 }
 
 .five-images .slide-content p img {
-  max-width: 19%;
+  max-width: 17%;
 }
 
 .logos h2 {
@@ -705,6 +703,10 @@ h2 + .quote {
   background-image: url(images/mariobackground-rayche.jpg);
   -webkit-filter: blur(6px) brightness(0.3);
   filter: blur(6px) brightness(0.3);
+}
+
+.slide.bg-bowser:before {
+  background-image: url(images/marioluigibowser-brick101.jpg);
 }
 
 .slide.card-closeup:before {
@@ -745,11 +747,6 @@ h2 + .quote {
 .what-if ul strong {
   padding-right: 0.5em;
   color: #c4c3f5;
-}
-
-.slide.bg-white:before {
-  background-color: #fff;
-  box-shadow: none;
 }
 
 .purple {

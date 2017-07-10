@@ -6,7 +6,7 @@ controls: true
 --
 
 ![Web](images/game-art/web-goldcoins.svg)
-![Payments](images/game-art/payments-silvercoins.svg)
+![Payments](images/game-art/payments-goldcoins.svg)
 ## and the future of online purchases
 
 <div class="contact">
@@ -19,7 +19,13 @@ controls: true
 
 ![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
 
-#### &ldquo;I just want to buy some socks&rdquo; 😱
+#### &ldquo;I just want to buy something&rdquo; 😱
+
+--
+
+## 69% of shopping carts are abandoned
+
+<div class="caption">Source: [Baymard Institute](https://baymard.com/lists/cart-abandonment-rate)</div>
 
 --
 
@@ -33,20 +39,15 @@ controls: true
 
 <div class="caption">[baymard.com/lists/cart-abandonment-rate](https://baymard.com/lists/cart-abandonment-rate)</div>
 
--- img-with-caption bg-fade-more what-if
+-- img-with-caption bg-bowser bg-fade
 
-## What if your browser could help?
+## Web Payments to the rescue
 
-* <strong><em>For users:</em></strong> simple & secure experience
-* <strong><em>For web devs:</em></strong> ready-to-use UI!
-
-<div class="credit">By [Marc Falardeau](https://www.flickr.com/photos/49889874@N05/5645164344)</div>
-
--- bg-white
+--
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
--- bg-fade socks-stack
+--
 
 ## 1. Our first sock sale
 
@@ -108,7 +109,7 @@ new PaymentRequest(methodData, details)
 
 <div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/) &middot; [youtu.be/ruuJr30FCTw](https://youtu.be/ruuJr30FCTw)</div>
 
--- bg-fade socks-drawer
+--
 
 ## 2. Adding customisations
 
@@ -207,7 +208,7 @@ new PaymentRequest(methodData, details, options)
 
 [bit.ly/samsung-internet-open-beta](http://bit.ly/samsung-internet-open-beta)
 
--- bg-white img-with-caption payment-gateways
+-- img-with-caption payment-gateways
 
 ### Payment Gateways
 
