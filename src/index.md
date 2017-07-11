@@ -278,6 +278,8 @@ new PaymentRequest(methodData, details, options)
 
 ### Supporters include...
 
+TODO switch this for a couple of individual examples e.g. Monzo?
+
 <div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![WePay](images/wepay.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
