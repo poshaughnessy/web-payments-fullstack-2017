@@ -79,6 +79,7 @@ img {
 }
 
 video {
+  max-width: 90vw;
   max-height: 85vh;
 }
 
@@ -744,6 +745,10 @@ h2 + .quote {
   background-image: url(images/marioluigibowser-brick101.jpg);
 }
 
+.slide.bg-insertcoin:before {
+  background-image: url(images/insertcoin-jan.jpg);
+}
+
 .slide.bg-goomba:before {
   background-image: url(images/goomba-flavio-edit.jpg);
 }
@@ -760,6 +765,10 @@ h2 + .quote {
   background-image: url(images/mariocoins-kent.jpg);
 }
 
+.slide.bg-marioblock:before {
+  background-image: url(images/marioblock-leandro.jpg);
+}
+
 .slide.bg-mariohooray:before {
   background-image: url(images/mariohooray-laurence.jpg);
 }
@@ -768,26 +777,12 @@ h2 + .quote {
   font-weight: normal;
 }
 
-.what-if h2 {
- font-size: 2em;
+.what-if img {
+  max-height: 60vh;  
 }
 
-.what-if li {
-  font-size: 1.3em;
-  margin-top: 1em;
-}
-
-.what-if ul strong {
-  padding-right: 0.5em;
-  color: #c4c3f5;
-}
-
-.purple {
-  color: #706cf5
-}
-
-.light-purple {
-  color: #c4c3f5
+.mobile-app-integrations img {
+  max-height: 60vh;
 }
 
 .browser-support .container {

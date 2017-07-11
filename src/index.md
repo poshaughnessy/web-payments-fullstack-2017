@@ -46,11 +46,31 @@ controls: false
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- img-with-caption bg-bowser bg-fade
+-- bg-marioblock bg-fade what-if
 
-## Web Payments to the rescue
+### What if...
 
-<div class="credit">[Brick 101](https://www.flickr.com/photos/fallentomato/19926463890)</div>
+![Saved details](images/payment-request-remembered-details.png)
+
+<div class="caption">Your browser could securely remember your payment & shipping details?</div>
+
+<div class="credit">[Leandro Amato](https://www.flickr.com/photos/grunge/2829427342)</div>
+
+-- bg-marioblock bg-fade what-if
+
+### What if...
+
+![Fingerprint scan](images/fingerprint-s8.png)
+
+<div class="caption">You could confirm the payment with your fingerprint or iris scan?</div>
+
+<div class="credit">[Leandro Amato](https://www.flickr.com/photos/grunge/2829427342)</div>
+
+-- img-with-caption bg-insertcoin bg-fade
+
+# Web Payments
+
+<div class="credit">[Jan W](https://www.flickr.com/photos/63883151@N07/8486121888)</div>
 
 --
 
@@ -95,7 +115,11 @@ var methodData = var methodData = [{
     supportedNetworks: ['visa', 'mastercard', 'amex']
   }
 }];
+```
 
+--
+
+```javascript
 var details = {
   total: {
     label: 'Socks', 
@@ -144,10 +168,7 @@ new PaymentRequest(methodData, details)
 ```javascript
 var details = {
   displayItems: [
-    {
-      label: "Socks",
-      amount: { currency: "GBP", value : "12.00" },
-    },
+    ...
     {
       label: "Loyalty discount",
       amount: { currency: "GBP", value : "-1.00" },
@@ -236,25 +257,22 @@ new PaymentRequest(methodData, details, options)
 
 ![Chrome desktop UI](images/chrome-desktop-socks.png)
 
-<div class="caption">Here's how it looks on desktop</div>
+<div class="caption">Desktop Chrome</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- img-with-header
 
-TODO try on DeX
+![DeX UI](images/dex-desktop-socks.png)
 
-<div class="caption">And in Samsung DeX</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
--- img-with-caption payment-gateways
-
-### Payment Gateways
-
-![Payment parties](images/web-payments-parties.png)
+<div class="caption">Samsung DeX</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+<!-- img-with-caption payment-gateways-->
+<!--### Payment Gateways-->
+<!--![Payment parties](images/web-payments-parties.png)-->
+<!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>-->
 
 -- logos
 
@@ -264,30 +282,49 @@ TODO try on DeX
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
--- img-with-header
+<!-- img-with-header-->
+<!--![Polykart](images/polykart.png)-->
+<!--<div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>-->
+<!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>-->
 
-![Polykart](images/polykart.png)
-
-<div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
--- bg-mariohooray
+-- bg-marioblock bg-fade what-if
 
 ## What's next?
 
-* Mobile payment app integrations
-* Payment Handler API
-* Gift cards / coupons?
-* Credentials/tokenisation standardisation?
+<div class="credit">[Leandro Amato](https://www.flickr.com/photos/grunge/2829427342)</div>
 
-<div class="credit">[Laurence Vagner](https://www.flickr.com/photos/redisdead/2165783016)</div>
+-- two-images mobile-app-integrations
 
--- thanks
+### Payment app integrations
+
+![Android Pay](images/android-pay.png)
+![Samsung Pay](images/samsung-pay.png)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
+### Payment Handler API
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
+### Lots More...
+
+TODO pic showing list of all the upcoming APIs/standards work etc?
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- thanks bg-mariohooray
 
 # Thanks!
 
 ![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
+
+Please leave feedback!
+
+[bit.ly/peter-fullstack-17](https://bit.ly/peter-fullstack-17)
 
 <div class="contact">
   <h3 class="social"> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
