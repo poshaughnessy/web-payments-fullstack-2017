@@ -229,27 +229,48 @@ new PaymentRequest(methodData, details, options)
 ## Browser support
 
 <div class="container">
-    <div>
-      ![Chrome](images/chrome.png)
-      <p>Chrome desktop beta (v53+ with flag)</p>
-    </div>
-    <div>
-      ![Chrome for Android](images/chrome-android.png)
-      <p>Chrome for Android v53+</p>
-    </div>
-    <div>
-      ![Samsung Internet](images/sbrowser5.4.png)
-      <p>Samsung Internet v5.0+</p>
-    </div>
-    <div>
-      ![Edge Preview](images/edge.png)
-      <p>Edge v15+</p>
-    </div>
-  </tr>
-  <tr>
+  <div>
+    ![Chrome](images/chrome.png)
+    <p>Chrome desktop beta (v53+ with flag)</p>
+  </div>
+  <div>
+    ![Chrome for Android](images/chrome-android.png)
+    <p>Chrome for Android v53+</p>
+  </div>
+  <div>
+    ![Samsung Internet](images/sbrowser5.4.png)
+    <p>Samsung Internet v5.0+</p>
+  </div>
+  <div>
+    ![Edge Preview](images/edge.png)
+    <p>Edge v15+</p>
+  </div>
 </div>
 
 <div class="caption">[caniuse.com/#feat=payment-request](http://caniuse.com/#feat=payment-request)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+-- browser-support three-images
+
+### Also in the Working Group...
+
+<div class="container">
+  <div>
+    ![Firefox](images/firefox.png)
+    <p>Mozilla</p>
+  </div>
+  <div>
+    ![Safari](images/safari.png)
+    <p>Apple</p>
+  </div>
+  <div>
+    ![Facebook](images/facebook.png)
+    <p>Facebook</p>
+  </div>
+</div>
+
+<div class="caption">[And many more](https://www.w3.org/2004/01/pp-impl/83744/status)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
@@ -274,20 +295,24 @@ new PaymentRequest(methodData, details, options)
 <!--![Payment parties](images/web-payments-parties.png)-->
 <!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>-->
 
--- logos
-
-### Supporters include...
-
-TODO switch this for a couple of individual examples e.g. Monzo?
-
-<div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![WePay](images/wepay.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div>
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+<!-- logos -->
+<!-- ### Supporters include... -->
+<!-- TODO switch this for a couple of individual examples e.g. Monzo? -->
+<!-- <div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![WePay](images/wepay.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div> -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
 <!-- img-with-header-->
 <!--![Polykart](images/polykart.png)-->
 <!--<div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>-->
 <!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>-->
+
+-- img-with-header
+
+### Real example: Monzo 
+
+![Monzo Payment Request](images/monzo2.png)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 -- bg-marioblock bg-fade what-if
 
@@ -304,19 +329,23 @@ TODO switch this for a couple of individual examples e.g. Monzo?
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
---
+-- img-with-header payment-handler-api
 
 ### Payment Handler API
 
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+![Payment Handler API](images/payment-handler-api.png)
 
---
-
-### Lots More...
-
-TODO pic showing list of all the upcoming APIs/standards work etc?
+<div class="caption">[bit.ly/payment-handler-api](http://bit.ly/payment-handler-api)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+<!-- -- -->
+<!-- ### Lots More... -->
+<!-- * Payment Method Manifest -->
+<!-- * Basic Credit Transfer Payment -->
+<!-- * Tokenised Card Payment -->
+<!-- * Web Payments HTTP API 1.0 -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
 -- thanks bg-mariohooray
 

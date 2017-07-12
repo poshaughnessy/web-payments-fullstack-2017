@@ -778,7 +778,7 @@ h2 + .quote {
 }
 
 .what-if img {
-  max-height: 60vh;  
+  max-height: 60vh;
 }
 
 .mobile-app-integrations img {
@@ -790,10 +790,17 @@ h2 + .quote {
 }
 
 .browser-support .container div {
-  max-width: 25%;
   box-sizing: border-box;
   float: left;
   padding: 1em;
+}
+
+.three-images .container div {
+  max-width: 33%;
+}
+
+.four-images .container div {
+  max-width: 25%;
 }
 
 .browser-support .container img {
@@ -802,7 +809,11 @@ h2 + .quote {
 }
 
 .browser-support .container p {
-  font-size: 0.9em;
+  font-size: 0.8em;
+}
+
+.payment-handler-api img {
+  margin: 2em 0;
 }
 
 .thanks img {

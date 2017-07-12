@@ -786,7 +786,7 @@ h2 + .quote {
 }
 
 .what-if img {
-  max-height: 60vh;  
+  max-height: 60vh;
 }
 
 .mobile-app-integrations img {
@@ -798,10 +798,17 @@ h2 + .quote {
 }
 
 .browser-support .container div {
-  max-width: 25%;
   box-sizing: border-box;
   float: left;
   padding: 1em;
+}
+
+.three-images .container div {
+  max-width: 33%;
+}
+
+.four-images .container div {
+  max-width: 25%;
 }
 
 .browser-support .container img {
@@ -810,7 +817,11 @@ h2 + .quote {
 }
 
 .browser-support .container p {
-  font-size: 0.9em;
+  font-size: 0.8em;
+}
+
+.payment-handler-api img {
+  margin: 2em 0;
 }
 
 .thanks img {
@@ -1004,37 +1015,56 @@ h2 + .quote {
   <div class="slide hidden  browser-support four-images" id="slide-22">
     <section class="slide-content"><h2 id="browser-support">Browser support</h2>
 <div class="container">
-    <div>
-      <img src="images/chrome.png" alt="Chrome">
-      <p>Chrome desktop beta (v53+ with flag)</p>
-    </div>
-    <div>
-      <img src="images/chrome-android.png" alt="Chrome for Android">
-      <p>Chrome for Android v53+</p>
-    </div>
-    <div>
-      <img src="images/sbrowser5.4.png" alt="Samsung Internet">
-      <p>Samsung Internet v5.0+</p>
-    </div>
-    <div>
-      <img src="images/edge.png" alt="Edge Preview">
-      <p>Edge v15+</p>
-    </div>
-  </tr>
-  <tr>
+  <div>
+    <img src="images/chrome.png" alt="Chrome">
+    <p>Chrome desktop beta (v53+ with flag)</p>
+  </div>
+  <div>
+    <img src="images/chrome-android.png" alt="Chrome for Android">
+    <p>Chrome for Android v53+</p>
+  </div>
+  <div>
+    <img src="images/sbrowser5.4.png" alt="Samsung Internet">
+    <p>Samsung Internet v5.0+</p>
+  </div>
+  <div>
+    <img src="images/edge.png" alt="Edge Preview">
+    <p>Edge v15+</p>
+  </div>
 </div>
 
 <div class="caption"><a href="http://caniuse.com/#feat=payment-request">caniuse.com/#feat=payment-request</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-23">
+  <div class="slide hidden  browser-support three-images" id="slide-23">
+    <section class="slide-content"><h3 id="also-in-the-working-group-">Also in the Working Group...</h3>
+<div class="container">
+  <div>
+    <img src="images/firefox.png" alt="Firefox">
+    <p>Mozilla</p>
+  </div>
+  <div>
+    <img src="images/safari.png" alt="Safari">
+    <p>Apple</p>
+  </div>
+  <div>
+    <img src="images/facebook.png" alt="Facebook">
+    <p>Facebook</p>
+  </div>
+</div>
+
+<div class="caption"><a href="https://www.w3.org/2004/01/pp-impl/83744/status">And many more</a></div>
+
+<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
+  </div>
+  <div class="slide hidden  img-with-header" id="slide-24">
     <section class="slide-content"><p><img src="images/chrome-desktop-socks.png" alt="Chrome desktop UI"></p>
 <div class="caption">Desktop Chrome</div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-24">
+  <div class="slide hidden  img-with-header" id="slide-25">
     <section class="slide-content"><p><img src="images/dex-desktop-socks.png" alt="DeX UI"></p>
 <div class="caption">Samsung DeX</div>
 
@@ -1043,37 +1073,48 @@ h2 + .quote {
 <!-- img-with-caption payment-gateways-->
 <!--### Payment Gateways-->
 <!--![Payment parties](images/web-payments-parties.png)-->
-<!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>--></section>
-  </div>
-  <div class="slide hidden  logos" id="slide-25">
-    <section class="slide-content"><h3 id="supporters-include-">Supporters include...</h3>
-<div class="flex"><img src="images/groupon.png" alt="Groupon"> <img src="images/mobify.png" alt="Mobify"> <img src="images/shopify.png" alt="Shopify"> <img src="images/washingtonpost.png" alt="Washington Post"> <img src="images/wepay.png" alt="WePay"> <img src="images/woocommerce.png" alt="Woo Commerce"> <img src="images/wwf.png" alt="WWF"></div>
+<!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>-->
 
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div>
+<!-- logos -->
+<!-- ### Supporters include... -->
+<!-- TODO switch this for a couple of individual examples e.g. Monzo? -->
+<!-- <div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![WePay](images/wepay.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div> -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
 <!-- img-with-header-->
 <!--![Polykart](images/polykart.png)-->
 <!--<div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>-->
 <!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>--></section>
   </div>
-  <div class="slide hidden  bg-marioblock bg-fade what-if" id="slide-26">
+  <div class="slide hidden  img-with-header" id="slide-26">
+    <section class="slide-content"><h3 id="real-example-monzo">Real example: Monzo</h3>
+<p><img src="images/monzo2.png" alt="Monzo Payment Request"></p>
+<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
+  </div>
+  <div class="slide hidden  bg-marioblock bg-fade what-if" id="slide-27">
     <section class="slide-content"><h2 id="what-s-next-">What&#39;s next?</h2>
 <div class="credit"><a href="https://www.flickr.com/photos/grunge/2829427342">Leandro Amato</a></div></section>
   </div>
-  <div class="slide hidden  two-images mobile-app-integrations" id="slide-27">
+  <div class="slide hidden  two-images mobile-app-integrations" id="slide-28">
     <section class="slide-content"><h3 id="payment-app-integrations">Payment app integrations</h3>
 <p><img src="images/android-pay.png" alt="Android Pay">
 <img src="images/samsung-pay.png" alt="Samsung Pay"></p>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-28">
+  <div class="slide hidden  img-with-header payment-handler-api" id="slide-29">
     <section class="slide-content"><h3 id="payment-handler-api">Payment Handler API</h3>
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
-  </div>
-  <div class="slide hidden" id="slide-29">
-    <section class="slide-content"><h3 id="lots-more-">Lots More...</h3>
-<p>TODO pic showing list of all the upcoming APIs/standards work etc?</p>
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
+<p><img src="images/payment-handler-api.png" alt="Payment Handler API"></p>
+<div class="caption"><a href="http://bit.ly/payment-handler-api">bit.ly/payment-handler-api</a></div>
+
+<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div>
+
+<!-- -- -->
+<!-- ### Lots More... -->
+<!-- * Payment Method Manifest -->
+<!-- * Basic Credit Transfer Payment -->
+<!-- * Tokenised Card Payment -->
+<!-- * Web Payments HTTP API 1.0 -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
   </div>
   <div class="slide hidden  thanks bg-mariohooray" id="slide-30">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
