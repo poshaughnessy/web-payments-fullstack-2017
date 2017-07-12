@@ -110,14 +110,11 @@ if (window.PaymentRequest) {
 
 ```javascript
 var methodData = [{
-  // NB. To support older format, include networks here 
-  supportedMethods: ['basic-card'],
-  data: {
-    // Examples. Others are available too!
-    supportedNetworks: ['visa', 'mastercard', 'amex']
-  }
+  supportedMethods: ['basic-card']
 }];
 ```
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
 --
 
@@ -139,11 +136,12 @@ var details = {
 
 new PaymentRequest(methodData, details)
   .show()
-  .then(function(uiResult) {
-    myPaymentProcessor(uiResult);
+  .then(function(paymentResponse) {
+    // Send paymentResponse to server or gateway, then...
+    paymentResponse.complete('success');
   })
   .catch(function(error) {
-    myErrorHandler(error);
+    // Unable to complete, e.g. user cancelled
   });
 ```
 
@@ -349,6 +347,28 @@ new PaymentRequest(methodData, details, options)
 <!-- * Web Payments HTTP API 1.0 -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
+-- bg-mariotoys
+
+## And more!
+
+<div class="credit">[Hawken King](https://www.flickr.com/photos/hawken/332539130)</div>
+
+-- further-resources
+
+These slides are at
+
+#### [bit.ly/web-payments-fullstack17](http://bit.ly/web-payments-fullstack17)
+
+Further resources
+
+* [github.com/w3c/payment-request-info](https://github.com/w3c/payment-request-info)
+* [github.com/w3c/payment-request-info/wiki/FAQ](https://github.com/w3c/payment-request-info/wiki/FAQ)
+* [medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f](medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
+* [github.com/SamsungInternet/examples/tree/master/socks-megastore](github.com/SamsungInternet/examples/tree/master/socks-megastore)
+* [developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
 -- thanks bg-mariohooray
 
 # Thanks!
@@ -357,7 +377,7 @@ new PaymentRequest(methodData, details, options)
 
 Please leave feedback on this talk!
 
-[bit.ly/peter-fullstack-17](https://bit.ly/peter-fullstack-17)
+[bit.ly/peter-fullstack17](https://bit.ly/peter-fullstack-17)
 
 <p style="margin-top: 2em;">Follow us for webby goodness!</p>
 
@@ -367,14 +387,3 @@ Please leave feedback on this talk!
 </div>
 
 <div class="credit">[Laurence Vagner](https://www.flickr.com/photos/redisdead/2165783016)</div>
-
--- further-resources
-
-## Further resources
-
-* [github.com/w3c/payment-request-info](https://github.com/w3c/payment-request-info)
-* [github.com/w3c/payment-request-info/wiki/FAQ](https://github.com/w3c/payment-request-info/wiki/FAQ)
-* [medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f](medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
-* [developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>

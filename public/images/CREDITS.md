@@ -21,6 +21,7 @@
 * sadmario-travis: https://www.flickr.com/photos/taestell/27988335225
 * marioblock-leandro: https://www.flickr.com/photos/grunge/2829427342
 * insertcoin-jan: https://www.flickr.com/photos/63883151@N07/8486121888
+* mariotoys-hawken: https://www.flickr.com/photos/hawken/332539130
 
 * game-art/pieces: https://opengameart.org/content/bombada
 * game-art/gold: https://opengameart.org/content/gold-treasure-icons

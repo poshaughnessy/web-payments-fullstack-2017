@@ -773,6 +773,10 @@ h2 + .quote {
   background-image: url(images/mariohooray-laurence.jpg);
 }
 
+.slide.bg-mariotoys:before {
+  background-image: url(images/mariotoys-hawken.jpg);
+}
+
 .emoji {
   font-weight: normal;
 }
@@ -821,10 +825,18 @@ h2 + .quote {
   width: 2em;
 }
 
+.thanks a {
+  font-size: 1.2em;
+}
+
 .thanks .contact {
   margin-top: 1em;
 }
 
+.further-resources h4 {
+  margin: 1em 0 2em 0;
+}
+
 .further-resources li {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }

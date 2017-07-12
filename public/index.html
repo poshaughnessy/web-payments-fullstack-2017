@@ -781,6 +781,10 @@ h2 + .quote {
   background-image: url(images/mariohooray-laurence.jpg);
 }
 
+.slide.bg-mariotoys:before {
+  background-image: url(images/mariotoys-hawken.jpg);
+}
+
 .emoji {
   font-weight: normal;
 }
@@ -829,12 +833,20 @@ h2 + .quote {
   width: 2em;
 }
 
+.thanks a {
+  font-size: 1.2em;
+}
+
 .thanks .contact {
   margin-top: 1em;
 }
 
+.further-resources h4 {
+  margin: 1em 0 2em 0;
+}
+
 .further-resources li {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
   </style>
@@ -923,14 +935,9 @@ h2 + .quote {
   </div>
   <div class="slide hidden" id="slide-13">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> methodData = [{
-  <span class="hljs-comment">// NB. To support older format, include networks here </span>
-  supportedMethods: [<span class="hljs-string">'basic-card'</span>],
-  data: {
-    <span class="hljs-comment">// Examples. Others are available too!</span>
-    supportedNetworks: [<span class="hljs-string">'visa'</span>, <span class="hljs-string">'mastercard'</span>, <span class="hljs-string">'amex'</span>]
-  }
+  supportedMethods: [<span class="hljs-string">'basic-card'</span>]
 }];</code></pre>
-</section>
+<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
   <div class="slide hidden" id="slide-14">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> details = {
@@ -946,11 +953,12 @@ h2 + .quote {
 
 <span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
   .show()
-  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uiResult</span>) </span>{
-    myPaymentProcessor(uiResult);
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">paymentResponse</span>) </span>{
+    <span class="hljs-comment">// Send paymentResponse to server or gateway, then...</span>
+    paymentResponse.complete(<span class="hljs-string">'success'</span>);
   })
   .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
-    myErrorHandler(error);
+    <span class="hljs-comment">// Unable to complete, e.g. user cancelled</span>
   });</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
@@ -1118,11 +1126,28 @@ h2 + .quote {
 <!-- * Web Payments HTTP API 1.0 -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
   </div>
-  <div class="slide hidden  thanks bg-mariohooray" id="slide-30">
+  <div class="slide hidden  bg-mariotoys" id="slide-30">
+    <section class="slide-content"><h2 id="and-more-">And more!</h2>
+<div class="credit"><a href="https://www.flickr.com/photos/hawken/332539130">Hawken King</a></div></section>
+  </div>
+  <div class="slide hidden  further-resources" id="slide-31">
+    <section class="slide-content"><p>These slides are at</p>
+<h4 id="-bit-ly-web-payments-fullstack17-http-bit-ly-web-payments-fullstack17-"><a href="http://bit.ly/web-payments-fullstack17">bit.ly/web-payments-fullstack17</a></h4>
+<p>Further resources</p>
+<ul>
+<li><a href="https://github.com/w3c/payment-request-info">github.com/w3c/payment-request-info</a></li>
+<li><a href="https://github.com/w3c/payment-request-info/wiki/FAQ">github.com/w3c/payment-request-info/wiki/FAQ</a></li>
+<li><a href="medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f">medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f</a></li>
+<li><a href="github.com/SamsungInternet/examples/tree/master/socks-megastore">github.com/SamsungInternet/examples/tree/master/socks-megastore</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/">developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/</a></li>
+</ul>
+<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
+  </div>
+  <div class="slide hidden  thanks bg-mariohooray" id="slide-32">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
 <p><img src="images/game-art/goldcoin/coin-spin.gif" alt="Spinning coin"></p>
 <p>Please leave feedback on this talk!</p>
-<p><a href="https://bit.ly/peter-fullstack-17">bit.ly/peter-fullstack-17</a></p>
+<p><a href="https://bit.ly/peter-fullstack-17">bit.ly/peter-fullstack17</a></p>
 <p style="margin-top: 2em;">Follow us for webby goodness!</p>
 
 <div class="contact">
@@ -1131,16 +1156,6 @@ h2 + .quote {
 </div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/redisdead/2165783016">Laurence Vagner</a></div></section>
-  </div>
-  <div class="slide hidden  further-resources" id="slide-31">
-    <section class="slide-content"><h2 id="further-resources">Further resources</h2>
-<ul>
-<li><a href="https://github.com/w3c/payment-request-info">github.com/w3c/payment-request-info</a></li>
-<li><a href="https://github.com/w3c/payment-request-info/wiki/FAQ">github.com/w3c/payment-request-info/wiki/FAQ</a></li>
-<li><a href="medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f">medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f</a></li>
-<li><a href="https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/">developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/</a></li>
-</ul>
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
 
 
