@@ -362,7 +362,7 @@ Please leave feedback!
   <h3 class="social"> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
 </div>
 
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+<div class="credit">[Laurence Vagner](https://www.flickr.com/photos/redisdead/2165783016)</div>
 
 -- further-resources
 
