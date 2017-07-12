@@ -122,12 +122,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // left, down, H, J, backspace, PgUp - BACK
     // up, right, K, L, space, PgDn - FORWARD
     // enter - FULLSCREEN
+    // p - PREFETCH IMAGES (for presenting - added by Peter)
     if (kc === 37 || kc === 40 || kc === 8 || kc === 72 || kc === 74 || kc === 33) {
       navigate(-1);
     } else if (kc === 38 || kc === 39 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
       navigate(1);
     } else if (kc === 13) {
       toggleFullScreen();
+    } else if (kc === 80) {
+      prefetchImages();
     }
   };
 
@@ -143,6 +146,29 @@ document.addEventListener('DOMContentLoaded', function () {
     };
   }
 });
+
+/**
+ * Prefetching images added by Peter
+ * to avoid flash of white screen when changing slides
+ */
+function prefetchImages() {
+  // For now these need to be manually updated for each talk!
+  var imageSources = [
+    'images/sadmario-travis-edit2.jpg',
+    'images/insertcoin-jan.jpg',
+    'images/goomba-flavio-edit.jpg',
+    'images/booghost-fujoshi.jpg',
+    'images/mariocoin-avery.jpg',
+    'images/mariocoins-kent.jpg',
+    'images/marioblock-leandro.jpg',
+    'images/mariohooray-laurence.jpg',
+    'images/mariotoys-hawken.jpg'
+  ];
+  for (var i=0; i < imageSources.length; i++) {
+    var image = new Image();
+    image.src = imageSources[i];
+  }
+}
 
 /**
  * Swipe handling added by Peter
@@ -200,7 +226,6 @@ if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
     }
   });
 }
-
 
 /* Service worker registration - added by Peter, removed for now */
 /*

@@ -733,18 +733,6 @@ h2 + .quote {
   box-shadow: inset 0 0 5em 1em #333; /* Less vignette */
 }
 
-.slide.bg-mario:before {
-  background-image: url(images/mario-sergey.jpg);
-}
-
-.slide.bg-mariocloseup:before {
-  background-image: url(images/mariocloseup-dave.jpg);
-}
-
-.slide.bg-bowser:before {
-  background-image: url(images/marioluigibowser-brick101.jpg);
-}
-
 .slide.bg-insertcoin:before {
   background-image: url(images/insertcoin-jan.jpg);
 }
