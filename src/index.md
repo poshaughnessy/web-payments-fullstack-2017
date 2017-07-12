@@ -368,10 +368,9 @@ Please leave feedback!
 
 ## Further resources
 
-* [bit.ly/how-to-take-web-payments](medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
-* [bit.ly/payment-request-api-guide](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
-* [bit.ly/payment-request-updates](https://developers.google.com/web/updates/2017/01/payment-request-updates)
-* [bit.ly/can-make-payment-sample](http://bit.ly/can-make-payment-sample)
-* [bit.ly/wepay-integration-docs](http://bit.ly/wepay-integration-docs)
+* [github.com/w3c/payment-request-info](https://github.com/w3c/payment-request-info)
+* [github.com/w3c/payment-request-info/wiki/FAQ](https://github.com/w3c/payment-request-info/wiki/FAQ)
+* [medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f](medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
+* [developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
