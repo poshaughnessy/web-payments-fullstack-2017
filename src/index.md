@@ -70,6 +70,8 @@ controls: false
 
 # Web Payments
 
+<div class="caption">[www.w3.org/Payments/WG/](https://www.w3.org/Payments/WG/)</div>
+
 <div class="credit">[Jan W](https://www.flickr.com/photos/63883151@N07/8486121888)</div>
 
 --
@@ -107,7 +109,7 @@ if (window.PaymentRequest) {
 --
 
 ```javascript
-var methodData = var methodData = [{
+var methodData = [{
   // NB. To support older format, include networks here 
   supportedMethods: ['basic-card'],
   data: {
@@ -353,9 +355,11 @@ new PaymentRequest(methodData, details, options)
 
 ![Spinning coin](images/game-art/goldcoin/coin-spin.gif)
 
-Please leave feedback!
+Please leave feedback on this talk!
 
 [bit.ly/peter-fullstack-17](https://bit.ly/peter-fullstack-17)
+
+<p style="margin-top: 2em;">Follow us for webby goodness!</p>
 
 <div class="contact">
   <h3 class="social"> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
