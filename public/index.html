@@ -729,6 +729,10 @@ h2 + .quote {
   max-height: 2.2em;
 }
 
+.and-more .caption {
+  margin-top: 1.5em;
+}
+
 .logos .pun {
   font-size: 0.9em;
 }
@@ -912,13 +916,13 @@ h2 + .quote {
   <div class="slide hidden  gold-coins bg-mariocoin1 bg-fade" id="slide-10">
     <section class="slide-content"><h2 id="let-s-sell-some-socks">Let&#39;s sell some socks</h2>
 <p><img src="images/socks-emoji-purple.png" alt="Socks"> <img src="images/game-art/goldcoin2/coins-less.svg" alt="Gold coins"></p>
-<div class="credit"><a href="https://www.flickr.com/photos/kylemhayes/3746664569">Aviery Edison</a></div></section>
+<div class="credit"><a href="https://www.flickr.com/photos/kylemhayes/3746664569">Aviery Edison</a></div>
+
+<!-- -- -->
+<!-- ![Sock sale](images/payment-request-socks-simple.png) -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
   </div>
   <div class="slide hidden" id="slide-11">
-    <section class="slide-content"><p><img src="images/payment-request-socks-simple.png" alt="Sock sale"></p>
-<div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
-  </div>
-  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.PaymentRequest) {
   <span class="hljs-comment">// We're good to go...</span>
 } <span class="hljs-keyword">else</span> {
@@ -926,13 +930,13 @@ h2 + .quote {
 }</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-13">
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> methodData = [{
   supportedMethods: [<span class="hljs-string">'basic-card'</span>]
 }];</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-14">
+  <div class="slide hidden" id="slide-13">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> details = {
   total: {
     label: <span class="hljs-string">'Socks'</span>, 
@@ -941,7 +945,7 @@ h2 + .quote {
 };</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-15">
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Show the payment UI and handle the result</span>
 
 <span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
@@ -955,19 +959,19 @@ h2 + .quote {
   });</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden" id="slide-15">
     <section class="slide-content"><video src="videos/socks-megastore-simple.mp4" controls></video>
 
 <div class="caption"><a href="http://samsunginter.net/examples/socks-megastore/after-simple/">samsunginter.net/examples/socks-megastore/after-simple/</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  gold-coins bg-mariocoin2 bg-fade" id="slide-17">
+  <div class="slide hidden  gold-coins bg-mariocoin2 bg-fade" id="slide-16">
     <section class="slide-content"><h2 id="let-s-add-some-options">Let&#39;s add some options</h2>
 <p><img src="images/socks-emoji-purple.png" alt="Socks"> <img src="images/game-art/goldcoin2/coins-more.svg" alt="More gold coins"></p>
 <div class="credit"><a href="https://www.flickr.com/photos/kentbrew/2550957151">Kent Brewster</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-18">
+  <div class="slide hidden" id="slide-17">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> details = {
   displayItems: [
     ...
@@ -983,7 +987,7 @@ h2 + .quote {
   ...</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-19">
+  <div class="slide hidden" id="slide-18">
     <section class="slide-content"><pre><code class="lang-javascript">  ...
   shippingOptions: [
     {
@@ -996,7 +1000,7 @@ h2 + .quote {
 };</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-20">
+  <div class="slide hidden" id="slide-19">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
   requestPayerName: <span class="hljs-literal">true</span>,
   requestPayerEmail: <span class="hljs-literal">true</span>,
@@ -1008,14 +1012,14 @@ h2 + .quote {
   ...</code></pre>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-21">
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"><video src="videos/socks-megastore-options.mp4" controls></video>
 
 <div class="caption"><a href="http://samsunginter.net/examples/socks-megastore/after-options/">samsunginter.net/examples/socks-megastore/after-options/</a></div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  browser-support four-images" id="slide-22">
+  <div class="slide hidden  browser-support four-images" id="slide-21">
     <section class="slide-content"><h2 id="browser-support">Browser support</h2>
 <div class="container">
   <div>
@@ -1040,7 +1044,7 @@ h2 + .quote {
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  browser-support three-images" id="slide-23">
+  <div class="slide hidden  browser-support three-images" id="slide-22">
     <section class="slide-content"><h3 id="also-in-the-working-group-">Also in the Working Group...</h3>
 <div class="container">
   <div>
@@ -1061,13 +1065,13 @@ h2 + .quote {
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-24">
+  <div class="slide hidden  img-with-header" id="slide-23">
     <section class="slide-content"><p><img src="images/chrome-desktop-socks.png" alt="Chrome desktop UI"></p>
 <div class="caption">Desktop Chrome</div>
 
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-25">
+  <div class="slide hidden  img-with-header" id="slide-24">
     <section class="slide-content"><p><img src="images/dex-desktop-socks.png" alt="DeX UI"></p>
 <div class="caption">Samsung DeX</div>
 
@@ -1089,22 +1093,22 @@ h2 + .quote {
 <!--<div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>-->
 <!--<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>--></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-26">
+  <div class="slide hidden  img-with-header" id="slide-25">
     <section class="slide-content"><h3 id="real-example-monzo">Real example: Monzo</h3>
 <p><img src="images/monzo2.png" alt="Monzo Payment Request"></p>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  bg-marioblock bg-fade what-if" id="slide-27">
+  <div class="slide hidden  bg-marioblock bg-fade what-if" id="slide-26">
     <section class="slide-content"><h2 id="what-s-next-">What&#39;s next?</h2>
 <div class="credit"><a href="https://www.flickr.com/photos/grunge/2829427342">Leandro Amato</a></div></section>
   </div>
-  <div class="slide hidden  two-images mobile-app-integrations" id="slide-28">
+  <div class="slide hidden  two-images mobile-app-integrations" id="slide-27">
     <section class="slide-content"><h3 id="payment-app-integrations">Payment app integrations</h3>
 <p><img src="images/android-pay.png" alt="Android Pay">
 <img src="images/samsung-pay.png" alt="Samsung Pay"></p>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header payment-handler-api" id="slide-29">
+  <div class="slide hidden  img-with-header payment-handler-api" id="slide-28">
     <section class="slide-content"><h3 id="payment-handler-api">Payment Handler API</h3>
 <p><img src="images/payment-handler-api.png" alt="Payment Handler API"></p>
 <div class="caption"><a href="http://bit.ly/payment-handler-api">bit.ly/payment-handler-api</a></div>
@@ -1119,11 +1123,13 @@ h2 + .quote {
 <!-- * Web Payments HTTP API 1.0 -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> --></section>
   </div>
-  <div class="slide hidden  bg-mariotoys" id="slide-30">
+  <div class="slide hidden  bg-mariotoys and-more" id="slide-29">
     <section class="slide-content"><h2 id="and-more-">And more!</h2>
+<div class="caption"><a href="https://www.w3.org/Payments/WG/">www.w3.org/Payments/WG/</a></div>
+
 <div class="credit"><a href="https://www.flickr.com/photos/hawken/332539130">Hawken King</a></div></section>
   </div>
-  <div class="slide hidden  further-resources" id="slide-31">
+  <div class="slide hidden  further-resources" id="slide-30">
     <section class="slide-content"><p>These slides are at</p>
 <h4 id="-bit-ly-web-payments-fullstack17-http-bit-ly-web-payments-fullstack17-"><a href="http://bit.ly/web-payments-fullstack17">bit.ly/web-payments-fullstack17</a></h4>
 <p>Further resources</p>
@@ -1136,7 +1142,7 @@ h2 + .quote {
 </ul>
 <div class="credit"><a href="https://www.flickr.com/photos/rayche1989/5203972988">Ray Che</a></div></section>
   </div>
-  <div class="slide hidden  thanks bg-mariohooray" id="slide-32">
+  <div class="slide hidden  thanks bg-mariohooray" id="slide-31">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
 <p><img src="images/game-art/goldcoin/coin-spin.gif" alt="Spinning coin"></p>
 <p>Please leave feedback on this talk!</p>

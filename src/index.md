@@ -88,11 +88,9 @@ controls: false
 
 <div class="credit">[Aviery Edison](https://www.flickr.com/photos/kylemhayes/3746664569)</div>
 
---
-
-![Sock sale](images/payment-request-socks-simple.png)
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+<!-- -- -->
+<!-- ![Sock sale](images/payment-request-socks-simple.png) -->
+<!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
 --
 
@@ -347,9 +345,11 @@ new PaymentRequest(methodData, details, options)
 <!-- * Web Payments HTTP API 1.0 -->
 <!-- <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div> -->
 
--- bg-mariotoys
+-- bg-mariotoys and-more
 
 ## And more!
+
+<div class="caption">[www.w3.org/Payments/WG/](https://www.w3.org/Payments/WG/)</div>
 
 <div class="credit">[Hawken King](https://www.flickr.com/photos/hawken/332539130)</div>
 

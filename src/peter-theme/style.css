@@ -721,6 +721,10 @@ h2 + .quote {
   max-height: 2.2em;
 }
 
+.and-more .caption {
+  margin-top: 1.5em;
+}
+
 .logos .pun {
   font-size: 0.9em;
 }
