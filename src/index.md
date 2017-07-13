@@ -94,6 +94,14 @@ controls: false
 
 --
 
+<video src="videos/socks-megastore-simple.mp4" controls></video>
+
+<div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/)</div>
+
+<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
+
+--
+
 ```javascript
 if (window.PaymentRequest) {
   // We're good to go...
@@ -142,14 +150,6 @@ new PaymentRequest(methodData, details)
     // Unable to complete, e.g. user cancelled
   });
 ```
-
-<div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
-
---
-
-<video src="videos/socks-megastore-simple.mp4" controls></video>
-
-<div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/)</div>
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
