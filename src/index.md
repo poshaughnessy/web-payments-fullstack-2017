@@ -232,7 +232,7 @@ new PaymentRequest(methodData, details, options)
 <div class="container">
   <div>
     ![Chrome](images/chrome.png)
-    <p>Chrome desktop beta (v53+ with flag)</p>
+    <p>Chrome desktop beta (v60+ with flag)</p>
   </div>
   <div>
     ![Chrome for Android](images/chrome-android.png)
