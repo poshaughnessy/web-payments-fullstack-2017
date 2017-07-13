@@ -119,7 +119,7 @@ var methodData = [{
 ```javascript
 var details = {
   total: {
-    label: 'Socks', 
+    label: 'Lovely socks', 
     amount: {currency: 'GBP', value: '12.00'}
   }
 };
@@ -308,7 +308,7 @@ new PaymentRequest(methodData, details, options)
 
 ### Real example: Monzo 
 
-![Monzo Payment Request](images/monzo2.png)
+![Monzo Payment Request](images/monzo3.jpg)
 
 <div class="credit">[Ray Che](https://www.flickr.com/photos/rayche1989/5203972988)</div>
 
@@ -320,7 +320,7 @@ new PaymentRequest(methodData, details, options)
 
 -- two-images mobile-app-integrations
 
-### Payment app integrations
+### More payment apps
 
 ![Android Pay](images/android-pay.png)
 ![Samsung Pay](images/samsung-pay.png)
