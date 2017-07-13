@@ -1,4 +1,5 @@
-title: Web Payments
+title: Web Payments - FullStack 2017
+description: Web Payments and the future of online purchases
 output: public/index.html
 theme: peter-theme
 themecolour: 111111
