@@ -1,8 +1,10 @@
 title: Web Payments
 output: public/index.html
 theme: peter-theme
-controls: false
-
+themecolour: 111111
+url: https://poshaughnessy.github.io/web-payments-fullstack-2017/
+image: https://poshaughnessy.github.io/web-payments-fullstack-2017/images/preview.jpg
+controls: true
 --
 
 ![Web](images/game-art/web-goldcoins.svg)
