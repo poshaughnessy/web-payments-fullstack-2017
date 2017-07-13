@@ -82,9 +82,9 @@ controls: false
 
 -- gold-coins bg-mariocoin1 bg-fade
 
-## 1. Our first sale
+## Let's sell some socks
 
-![Gold coins](images/game-art/goldcoin2/coins-less.svg)
+![Socks](images/socks-emoji-purple.png) ![Gold coins](images/game-art/goldcoin2/coins-less.svg)
 
 <div class="credit">[Aviery Edison](https://www.flickr.com/photos/kylemhayes/3746664569)</div>
 
@@ -157,9 +157,9 @@ new PaymentRequest(methodData, details)
 
 -- gold-coins bg-mariocoin2 bg-fade
 
-## 2. Adding options
+## Let's add some options
 
-![More gold coins](images/game-art/goldcoin2/coins-more.svg)
+![Socks](images/socks-emoji-purple.png) ![More gold coins](images/game-art/goldcoin2/coins-more.svg)
 
 <div class="credit">[Kent Brewster](https://www.flickr.com/photos/kentbrew/2550957151)</div>
 
